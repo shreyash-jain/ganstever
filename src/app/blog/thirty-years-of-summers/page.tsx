@@ -61,8 +61,8 @@ export default function Page() {
         alt={post.cover.alt}
         eyebrow="Our story · Suiderstrand"
         title={post.title}
-        intro="A house at the end of a gravel road, a baby three months old, and a family that kept coming back — for thirty years."
-        byline={`By ${site.contact.hostName}, as told to the family`}
+        intro="A house at the end of a gravel road, three decades of family summers — and the question from visiting friends that finally opened the doors."
+        byline={`By ${site.contact.hostName}, your host`}
         datePublished={post.datePublished}
         readingMinutes={post.readingMinutes}
       />
@@ -70,26 +70,25 @@ export default function Page() {
       <div className="mx-auto max-w-3xl px-5 py-12 lg:px-8">
         <div className="prose-gv">
           <p>
-            My dad bought the stand at Suiderstrand in 1990. There was not
-            much here then — there still isn&rsquo;t, thank goodness — just
-            fynbos, dunes, the sea, and a gravel road that ends where the
-            continent does.
+            Suiderstrand has never been on the way to anywhere. The gravel
+            road runs past the lighthouse, through the reserve, and simply
+            stops — and at the end of it, in 1990, my father bought a stand.
+            There was not much here then. There still isn&rsquo;t, thank
+            goodness.
           </p>
           <p>
-            I started building the next year, in 1991. My firstborn son,
-            Izak, was three months old. If you have ever built a house at
-            the end of the world with a newborn on your hip, you will
-            understand why this place is not just a property to us. The
-            house grew up with the children: five bedrooms, eventually,
-            because the family kept growing; long tables, because everyone
-            kept coming; and braais everywhere, because this is, after all,
-            South Africa.
+            We started building the following year, and the house grew the
+            way family houses do: five bedrooms, eventually, because the
+            family kept growing; long tables, because everyone kept coming;
+            and braais everywhere, because this is, after all, South Africa.
+            It was never just a property to us — it was where the children,
+            and then the grandchildren, learned what summer means.
           </p>
         </div>
 
         <Callout eyebrow="Why here">
-          Gans-te-Ver stands inside a nature reserve, wonderfully isolated —
-          and that isolation is something I will always look for.
+          Gans-te-Ver stands alone inside a nature reserve — and that
+          wonderful isolation is the whole point of it.
         </Callout>
 
         <div className="prose-gv">

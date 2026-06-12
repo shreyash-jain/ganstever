@@ -208,7 +208,7 @@ export default function Page() {
           </p>
           <p>
             Fifteen minutes further is Struisbaai: a working fishing harbour
-            with turquoise water that looks borrowed from a island brochure.
+            with turquoise water that looks borrowed from an island brochure.
             Buy fish straight off the boats in season, then look over the
             harbour wall — the short-tail stingrays that glide between the
             hulls are a local institution (the most famous, Parrie, has been

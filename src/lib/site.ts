@@ -1,7 +1,7 @@
 export const site = {
   name: "Gans-te-Ver",
   fullName: "Gans-te-Ver Suiderstrand",
-  tagline: "Our family's wild escape — now open to yours.",
+  tagline: "Thirty years our family's secret. Now yours to borrow.",
   description:
     "Gans-te-Ver is a self-catering holiday home in Suiderstrand at Cape Agulhas, the southernmost tip of Africa. Five en-suite bedrooms sleeping ten, inside a coastal nature reserve and a few metres from the beach — sea views from almost every room, a pizza oven, indoor and outdoor braais, and walking trails straight from the door. Built by our family in 1991, opened to guests in 2024.",
   url: "https://ganstever.com",

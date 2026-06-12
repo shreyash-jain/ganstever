@@ -14,8 +14,8 @@ export function Footer() {
           </p>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink/75">
             A family beach house inside a coastal nature reserve at the
-            southernmost tip of Africa. Five en-suite bedrooms, ten beds-worth
-            of family and friends, and the sea a few metres away.
+            southernmost tip of Africa. Five en-suite bedrooms, room for ten,
+            and the sea a few metres beyond the garden wall.
           </p>
         </div>
 

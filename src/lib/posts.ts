@@ -37,7 +37,7 @@ export const posts: Post[] = [
     slug: "thirty-years-of-summers",
     title: "Thirty years of summers: why we finally opened Gans-te-Ver",
     excerpt:
-      "My dad bought the stand in 1990. I started building in 1991, when my firstborn was three months old. For thirty years this was our family's hideout — here's why we opened the doors in 2024.",
+      "A stand bought in 1990, a house built the year after, and three decades of family summers at the end of a gravel road — the story of why we finally opened the doors in 2024.",
     datePublished: "2026-06-12",
     readingMinutes: 6,
     tag: "Our Story",

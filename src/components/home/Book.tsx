@@ -7,7 +7,7 @@ export function Book() {
       id="book"
       tone="sea"
       eyebrow="Book your stay"
-      title="The sea is already here. You're the missing part."
+      title="Bring the people. We'll send the directions."
       intro="Message Madelaine directly on WhatsApp — she typically replies within minutes — or call if you'd rather talk it through."
     >
       <div className="mt-10 grid gap-8 lg:grid-cols-[1.2fr_1fr]">

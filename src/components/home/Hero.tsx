@@ -22,13 +22,13 @@ export function Hero() {
             Self-catering holiday home · Suiderstrand, Western Cape
           </p>
           <h1 className="mt-4 font-display text-4xl leading-[1.05] tracking-tight text-sea-deep sm:text-5xl lg:text-[3.4rem]">
-            Our family&rsquo;s wild escape — now open to yours.
+            Thirty years our family&rsquo;s secret. Now yours to borrow.
           </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-ink/80 md:text-lg">
-            Gans-te-Ver is the beach house our family built in 1991 inside a
-            coastal nature reserve at the southernmost tip of Africa. Ten of
-            you, five en-suite bedrooms, a pizza oven, three braais — and the
-            sea, a few metres beyond the garden wall.
+            We built Gans-te-Ver in 1991, inside a coastal nature reserve at
+            the southernmost tip of Africa. Five en-suite bedrooms, room for
+            ten, a pizza oven and three braais — and the beach begins where
+            the garden ends.
           </p>
 
           <ul className="mt-7 flex flex-wrap gap-2">
