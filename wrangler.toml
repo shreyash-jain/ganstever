@@ -1,0 +1,13 @@
+# Cloudflare Pages configuration.
+# Sets the Workers compatibility flags needed by @cloudflare/next-on-pages so
+# Next.js can use Node built-ins (Buffer, process, stream, etc.). Without
+# this flag, the deployed site shows "no nodejs_compat compatibility flag set".
+#
+# `name` must match the Cloudflare Pages project name (URL is
+# <branch>.<name>.pages.dev). `pages_build_output_dir` is where
+# @cloudflare/next-on-pages writes its build artefact.
+
+name = "ganstever"
+compatibility_date = "2025-09-23"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = ".vercel/output/static"

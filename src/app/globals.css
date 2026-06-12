@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Gans-te-Ver palette — bright coastal Agulhas: shell-white walls,
+     dune sand, fynbos-fringed deep sea. Warm and clear, not cinematic. */
+  --color-ink: #23201a;
+  --color-shell: #fbf9f4;
+  --color-sand: #efe6d4;
+  --color-dune: #b9874a;
+  --color-dune-deep: #95682f;
+  --color-sea: #2e6360;
+  --color-sea-deep: #1e4543;
+  --color-foam: #e3eeec;
+  --color-muted: #6e675a;
+
+  --color-background: var(--color-shell);
+  --color-foreground: var(--color-ink);
+
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-inter);
+}
+
+:root {
+  --background: var(--color-shell);
+  --foreground: var(--color-ink);
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Anchor sections sit below the sticky header when jumped to. */
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--color-sea);
+  color: var(--color-shell);
+}
+
+.font-display {
+  font-family: var(--font-display), Georgia, "Times New Roman", serif;
+  font-optical-sizing: auto;
+  letter-spacing: -0.01em;
+}
+
+/* Long-read body — relaxed 1.7 line-height for the story and journal. */
+.prose-gv p {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: color-mix(in srgb, var(--color-ink) 88%, transparent);
+}
+
+.prose-gv p + p {
+  margin-top: 1rem;
+}
+
+.prose-gv h2 {
+  margin-top: 2.75rem;
+  margin-bottom: 1rem;
+}
+
+.prose-gv h2:first-child {
+  margin-top: 0;
+}
+
+.hairline {
+  background: linear-gradient(
+    to right,
+    transparent,
+    color-mix(in srgb, var(--color-ink) 25%, transparent),
+    transparent
+  );
+  height: 1px;
+}
