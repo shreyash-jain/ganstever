@@ -47,7 +47,7 @@ export function organizationLd() {
     checkinTime: site.policies.checkIn,
     checkoutTime: site.policies.checkOut,
     smokingAllowed: false,
-    petsAllowed: "By prior arrangement",
+    petsAllowed: site.policies.pets,
     numberOfRooms: site.capacity.bedrooms,
   };
 }

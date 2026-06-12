@@ -26,7 +26,7 @@ const features = [
   },
   {
     title: "The easy extras",
-    body: "Free Wi-Fi, covered carport parking, child-friendly — and pets are welcome by prior arrangement.",
+    body: "Free Wi-Fi, covered carport parking, child-friendly — and pets stay free, by prior arrangement.",
   },
 ] as const;
 

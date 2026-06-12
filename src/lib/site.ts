@@ -8,7 +8,9 @@ export const site = {
   locale: "en_ZA",
   region: "Western Cape, South Africa",
   address: {
-    street: "Suiderstrand",
+    // Street per the Booking.com listing; postal code is the L'Agulhas
+    // post code (Booking's "6019" is bad data).
+    street: "172 Seemansweg",
     city: "Suiderstrand, Cape Agulhas",
     region: "Western Cape",
     postalCode: "7287",
@@ -43,8 +45,12 @@ export const site = {
     checkIn: "14:00",
     checkOut: "10:00",
     minNights: 2,
-    pets: "By prior arrangement",
+    // Booking.com house rules: pets on request at no charge, no parties,
+    // quiet hours in the reserve.
+    pets: "Free, by prior arrangement",
     smoking: false,
+    parties: false,
+    quietHours: "22:00 – 07:00",
   },
   // SA-Venues listing, June 2026: from R1,300 per night for the whole
   // house, seasonal. Numbers anchor trust — keep the "from" honest.
@@ -63,14 +69,25 @@ export const site = {
   hostedSince: 2024,
   builtIn: 1991,
   // Travel numbers anchor trust — distances are approximate road distances.
+  // Southernmost-tip figure follows the Booking.com listing (4.7 km).
   distances: {
     capeTownHours: "2h45",
     capeTownKm: 230,
     lighthouseKm: 7,
-    southernmostTipKm: 9,
+    southernmostTipKm: 5,
     struisbaaiKm: 12,
     bredasdorpKm: 37,
     beachMetres: "a few metres",
+  },
+  // Booking.com listing scores, June 2026 (11 reviews). Shown as UI copy
+  // only — kept out of JSON-LD per Google's self-serving review policy.
+  reviews: {
+    score: 8.4,
+    bestScore: 10,
+    count: 11,
+    location: 9.9,
+    valueForMoney: 9.1,
+    source: "Booking.com",
   },
   keywords: [
     "Suiderstrand accommodation",

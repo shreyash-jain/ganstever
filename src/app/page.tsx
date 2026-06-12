@@ -3,6 +3,7 @@ import { Story } from "@/components/home/Story";
 import { House } from "@/components/home/House";
 import { Setting } from "@/components/home/Setting";
 import { WhoFor } from "@/components/home/WhoFor";
+import { GuestWord } from "@/components/home/GuestWord";
 import { Practical, faqs } from "@/components/home/Practical";
 import { Book } from "@/components/home/Book";
 import { faqLd } from "@/lib/jsonld";
@@ -24,6 +25,7 @@ export default function HomePage() {
       <House />
       <Setting />
       <WhoFor />
+      <GuestWord />
       <Practical />
       <Book />
     </>

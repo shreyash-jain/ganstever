@@ -63,6 +63,10 @@ export function Hero() {
             {site.pricing.fromZAR.toLocaleString("en-ZA")} {site.pricing.unit}{" "}
             · minimum {site.policies.minNights} nights
           </p>
+          <p className="mt-1.5 text-sm text-muted">
+            Rated {site.reviews.score.toFixed(1)}/10 on {site.reviews.source} —
+            guests give the location {site.reviews.location.toFixed(1)}.
+          </p>
         </div>
 
         <figure className="relative">

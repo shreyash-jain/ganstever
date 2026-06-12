@@ -17,11 +17,15 @@ export const faqs = [
   },
   {
     q: "Can we bring our dog?",
-    a: "Pets are welcome by prior arrangement — the house stands inside a nature reserve, so please check with Madelaine first and keep dogs off the fynbos and dunes.",
+    a: "Yes — pets stay free, by prior arrangement. The house stands inside a nature reserve, so please check with Madelaine first and keep dogs off the fynbos and dunes.",
   },
   {
     q: "Is the house good for children?",
-    a: "Very — a walled lawn, a child-friendly layout and a beach a few metres away. The Agulhas coast is wild ocean, though, so children should always be supervised on the rocks and in the water.",
+    a: "Very — a walled lawn, a child-friendly layout and a beach a few metres away. Children of all ages are welcome; note there are no cots or extra beds, so little ones share the five doubles. The Agulhas coast is wild ocean, so always supervise on the rocks and in the water.",
+  },
+  {
+    q: "Can we throw a party?",
+    a: "Long dinners, braais and pizza-oven evenings — absolutely. Parties and events, no: the house stands inside a quiet nature reserve, and quiet hours run 22:00 to 07:00. That peace is exactly what you come here for.",
   },
 ] as const;
 

@@ -72,6 +72,13 @@ photos, or a commissioned shoot.
       `GA_MEASUREMENT_ID` in `src/app/layout.tsx`.
 - [ ] **Rates**: "from R1,300/night, min 2 nights" came from the SA-Venues
       listing (June 2026) — confirm it still holds.
+- [ ] **Check-out time conflict**: SA-Venues says check-out 10:00 (what the
+      site shows); Booking.com house rules say 06:00–09:00, with check-in
+      14:00–16:00 and arrival time required in advance. Confirm the real
+      times with Madelaine and align all listings.
+- [ ] **Damage policy**: Booking.com mentions up to R1,000 chargeable after
+      check-out — decide whether the site should mention it (currently
+      doesn't).
 - [ ] Google Business Profile rename/claim ("Gans-te-Ver"), then match
       the site's brand spelling everywhere.
 

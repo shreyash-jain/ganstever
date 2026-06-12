@@ -48,8 +48,11 @@ export function Book() {
           </p>
           <p className="mt-3 text-sm leading-relaxed text-shell/80">
             Gans-te-Ver is also listed on the platforms below — same house,
-            same beds. Booking directly on WhatsApp always gets you the best
-            available rate and a human on the other side.
+            same beds, where guests rate us{" "}
+            {site.reviews.score.toFixed(1)}/10 (and the location{" "}
+            {site.reviews.location.toFixed(1)}). Booking directly on WhatsApp
+            always gets you the best available rate and a human on the other
+            side.
           </p>
           <ul className="mt-5 space-y-2 text-sm">
             <li>
