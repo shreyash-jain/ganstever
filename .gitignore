@@ -52,3 +52,4 @@ temp_interactive_push.bat
 # Bulk listing-import archives — reference material, curated picks are
 # committed individually at public/images/<descriptive-name>.jpg
 /public/images/lekkeslaap/
+branch_structure.json
