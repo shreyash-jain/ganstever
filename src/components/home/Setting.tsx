@@ -105,12 +105,12 @@ export function Setting() {
       </div>
 
       <p className="mt-8 text-base text-ink/80">
-        Want the full local rundown?{" "}
+        Want more from down here?{" "}
         <Link
-          href="/blog/things-to-do-cape-agulhas"
+          href="/blog"
           className="font-medium text-sea underline-offset-4 hover:underline"
         >
-          Read our guide to Suiderstrand &amp; Cape Agulhas →
+          Read the journal →
         </Link>
       </p>
     </Section>

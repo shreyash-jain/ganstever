@@ -158,6 +158,34 @@ export const img = {
     height: 1799,
   },
 
+  // ---- AI-illustrative (cool-climate wine journal post) -------------------
+  // NOT photographs of Gans-te-Ver, and never passed off as one specific
+  // named farm. These two are generated for the Agulhas Wine Triangle post by
+  // scripts/generate-images-gemini.py (Gemini image model) and then uploaded
+  // to Cloudinary by scripts/upload-to-cloudinary.py, exactly like the photos
+  // above. Until that pipeline runs with a GEMINI_API_KEY set, these public_ids
+  // will 404 — swap to a property photo if you need to ship before generating.
+  // Cover + OG image for the wine post. Wide 16:10 so it sits correctly in the
+  // /blog index card (aspect-[16/10]) and the BlogHero fill.
+  elimVineyardCover: {
+    src: cldImage("elim-vineyard-cover", "f_auto,q_auto,c_limit,w_2000"),
+    alt: "Wind-bent rows of cool-climate vines running to a low horizon under a wide grey Overberg sky — the Elim wine ward inland from Cape Agulhas.",
+    width: 2000,
+    height: 1250,
+  },
+  elimVineyard: {
+    src: cldImage("elim-vineyard"),
+    alt: "Low, wind-pruned cool-climate vineyards on stony shale soil under a grey, overcast Overberg sky — illustrative of the Elim wine ward inland from Cape Agulhas.",
+    width: 1536,
+    height: 1024,
+  },
+  sauvignonPour: {
+    src: cldImage("sauvignon-pour"),
+    alt: "A glass of pale, cool-climate Sauvignon Blanc being poured at a rustic tasting-room counter, with green vineyards soft in the background.",
+    width: 1536,
+    height: 1024,
+  },
+
   // ---- Open Graph / share image -------------------------------------------
   ogDefault: {
     src: cldImage("lounge-sea-view", "f_auto,q_auto,c_fill,g_auto,ar_1200:630,w_1200"),

@@ -10,11 +10,17 @@ import { whatsappLink } from "@/lib/site";
 // ---------------------------------------------------------------------
 
 // --- TL;DR -----------------------------------------------------------
-export function TLDR({ items }: { items: string[] }) {
+export function TLDR({
+  items,
+  label = "TL;DR",
+}: {
+  items: string[];
+  label?: string;
+}) {
   return (
     <aside className="not-prose my-10 rounded-2xl border-l-4 border-dune bg-sand/70 p-6 md:p-8">
       <p className="text-xs font-medium uppercase tracking-[0.2em] text-dune-deep">
-        TL;DR
+        {label}
       </p>
       <ul className="mt-4 space-y-2 text-base leading-relaxed text-ink/85">
         {items.map((item, i) => (

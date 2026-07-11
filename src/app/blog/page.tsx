@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { posts } from "@/lib/posts";
+import { publishedPosts as posts } from "@/lib/posts";
 import { site } from "@/lib/site";
 import { breadcrumbLd } from "@/lib/jsonld";
 
