@@ -40,6 +40,26 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "land-based-whale-watching-cape-agulhas",
+    title:
+      "Whales from the dunes: land-based whale watching at Cape Agulhas",
+    // Primary keyword: "land based whale watching Cape Agulhas". NOT "Cape
+    // Agulhas in July" (domestic-only, and "July is peak" failed fact-check —
+    // season Jun–Nov, peak Aug–Oct). The site's one evergreen whale hub.
+    seoTitle: "Land-Based Whale Watching at Cape Agulhas",
+    seoDescription:
+      "Southern rights pass June to November, peaking August–October. Where to watch from shore: Struisbaai, the lighthouse beaches and our own dunes.",
+    excerpt:
+      "From June to November, southern right whales cruise this coast close enough to watch from the sand — no boat, no schedule. Here's where we stand, from Struisbaai's harbour wall to the dunes in front of the house.",
+    datePublished: "2026-07-10",
+    readingMinutes: 8,
+    tag: "Guide",
+    cover: img.whaleCoastCover,
+    // Staged: the page builds and resolves at its URL, but only the wine post
+    // is listed on /blog + the sitemap. Delete this line to publish it live.
+    draft: true,
+  },
+  {
     slug: "wine-tasting-near-cape-agulhas",
     title:
       "The Agulhas Wine Triangle: a cool-climate wine day from the bottom of Africa",
