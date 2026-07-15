@@ -85,6 +85,33 @@ PROMPTS: dict[str, str] = {
         "in the foreground. No people, no buildings, no text, no logos. Muted "
         "natural colours, documentary photography, 3:2 landscape aspect ratio."
     ),
+    # --- Whale post (land-based-whale-watching-cape-agulhas) ----------------
+    # Cover: low horizon, subject off-centre — dark hero gradient sits on top.
+    "whale-coast-cover": (
+        "A wide cinematic landscape photograph from the top of a fynbos-covered "
+        "dune at the southern tip of Africa, looking out over a cold grey-green "
+        "winter sea. Offshore, right of centre, a southern right whale's dark "
+        "back and V-shaped blow break the surface. Low horizon, huge soft "
+        "overcast sky, muted winter light, empty coast, no people, no boats, no "
+        "text, no logos. Muted natural colours, documentary photography, 16:10 "
+        "wide landscape aspect ratio."
+    ),
+    "southern-right-shore": (
+        "A realistic documentary photograph of a southern right whale surfacing "
+        "very close to a pale, empty South African beach — dark back and rough "
+        "white callosities on the head clearly visible above cold green water, "
+        "small waves breaking between the whale and the sand. Overcast soft "
+        "light, no people, no boats, no text, no logos. Muted natural colours, "
+        "3:2 landscape aspect ratio."
+    ),
+    "storm-sea-winter": (
+        "A realistic moody landscape photograph of a winter cold front arriving "
+        "over the sea, seen from low coastal fynbos dunes at the southern tip "
+        "of Africa. A dark curtain of rain hangs offshore, shafts of silver "
+        "light break through heavy cloud onto the water, wind-flattened fynbos "
+        "in the foreground. No people, no buildings, no text, no logos. Muted "
+        "natural colours, documentary photography, 3:2 landscape aspect ratio."
+    ),
 }
 
 

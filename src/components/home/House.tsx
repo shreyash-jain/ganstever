@@ -9,8 +9,8 @@ const features = [
     body: "Every bedroom has its own shower, toilet and basin — no morning queues, even with ten of you.",
   },
   {
-    title: "A main suite with its own sea balcony",
-    body: "Double bed, sitting corner, TV and fridge — and a private balcony with a built-in braai facing the water.",
+    title: "A main suite with its own glassed-in sunroom",
+    body: "Double bed, sitting corner, TV and fridge — opening onto a private sea-facing sunroom, newly enclosed with sliding glass windows and its own braai, so the view stays whatever the wind does.",
   },
   {
     title: "Two lounges, two long tables",
@@ -31,12 +31,13 @@ const features = [
 ] as const;
 
 const gallery: { image: Img; label: string }[] = [
-  { image: img.mainSuiteSeaView, label: "The main suite" },
+  { image: img.mainSuiteSunroom, label: "The main suite" },
+  { image: img.sunroomSeaTable, label: "The top-floor sunroom" },
   { image: img.diningPizzaOven, label: "The pizza oven table" },
   { image: img.loungeMain, label: "The big lounge" },
   { image: img.diningIndoorBraai, label: "Supper by the indoor braai" },
   { image: img.kitchenMain, label: "The kitchen" },
-  { image: img.mainSuiteBalcony, label: "Main suite, sea side" },
+  { image: img.sunroomSunset, label: "Sunset through the sliding glass" },
   { image: img.diningRoom, label: "The eight-seater" },
   { image: img.braaiWall, label: "The braai wall" },
   { image: img.bedroomEnsuite, label: "A double room + en-suite" },
