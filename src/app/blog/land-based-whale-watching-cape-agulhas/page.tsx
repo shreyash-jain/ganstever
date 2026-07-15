@@ -226,14 +226,8 @@ export default function Page() {
             A July at this house is storm-watching from the window seat while
             a front comes through, the pizza oven earning its keep by
             mid-afternoon, and the reserve to yourself &mdash; and when the
-            wind makes the coast unreasonable, the{" "}
-            <Link
-              href="/blog/wine-tasting-near-cape-agulhas"
-              className="font-medium text-sea underline-offset-4 hover:underline"
-            >
-              Elim wine ward
-            </Link>{" "}
-            is forty-five minutes inland and largely indifferent to weather.
+            wind makes the coast unreasonable, the Elim wine ward is
+            forty-five minutes inland and largely indifferent to weather.
             The first whale of winter, seen alone from a cold dune, beats a
             crowded peak-season sighting by some distance.
           </p>

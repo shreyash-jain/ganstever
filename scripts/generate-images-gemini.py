@@ -58,33 +58,32 @@ IMAGE_DIR = ROOT / "public" / "images"
 # public_id (filename stem, must match the cldImage() ids in src/lib/images.ts)
 # -> prompt. Ask for a wide landscape frame so it sits well in the figure block.
 PROMPTS: dict[str, str] = {
-    # Cover + OG image. Must read well behind the dark hero gradient and crop
-    # sanely to 16:10 on the /blog index card — so keep the horizon low and the
-    # subject away from the centre, where the H1 sits.
-    "elim-vineyard-cover": (
-        "A wide cinematic landscape photograph of a cool-climate vineyard at the "
-        "southern tip of Africa. Long rows of low, wind-bent vines sweep from the "
-        "foreground to a low horizon; stony iron-red laterite and shale soil "
-        "between the rows; coastal fynbos and a distant grey sea beyond. A huge "
-        "overcast Overberg sky fills the upper two-thirds, soft diffused light "
-        "just before rain, wind visibly moving through the leaves. No people, no "
-        "buildings, no text, no logos. Muted natural colours, documentary "
-        "photography, 16:10 wide landscape aspect ratio."
+    # Cover: same hero rules — low horizon, subject off-centre, dark gradient
+    # sits over the top two-thirds.
+    "whale-coast-cover": (
+        "A wide cinematic landscape photograph from the top of a fynbos-covered "
+        "dune at the southern tip of Africa, looking out over a cold grey-green "
+        "winter sea. Offshore, right of centre, a southern right whale's dark "
+        "back and V-shaped blow break the surface. Low horizon, huge soft "
+        "overcast sky, muted winter light, empty coast, no people, no boats, no "
+        "text, no logos. Muted natural colours, documentary photography, 16:10 "
+        "wide landscape aspect ratio."
     ),
-    "elim-vineyard": (
-        "A realistic documentary photograph looking down a row of cool-climate "
-        "Sauvignon Blanc vines in the Elim ward near Cape Agulhas, South Africa. "
-        "Low, wind-pruned vines on stony, iron-rich shale and laterite soil; the "
-        "stones sharp in the foreground. Overcast grey southeaster sky, coastal "
-        "fynbos on the horizon. No people, no buildings, no text, soft diffused "
-        "light, natural muted colours, 3:2 landscape aspect ratio."
+    "southern-right-shore": (
+        "A realistic documentary photograph of a southern right whale surfacing "
+        "very close to a pale, empty South African beach — dark back and rough "
+        "white callosities on the head clearly visible above cold green water, "
+        "small waves breaking between the whale and the sand. Overcast soft "
+        "light, no people, no boats, no text, no logos. Muted natural colours, "
+        "3:2 landscape aspect ratio."
     ),
-    "sauvignon-pour": (
-        "A realistic close-up photograph of a glass of pale, cool-climate "
-        "Sauvignon Blanc being poured at a rustic wooden tasting-room counter, "
-        "condensation on the glass, out-of-focus green vineyards through a "
-        "window behind, soft natural daylight, warm and understated mood, no "
-        "text, no logos, 3:2 landscape aspect ratio."
+    "storm-sea-winter": (
+        "A realistic moody landscape photograph of a winter cold front arriving "
+        "over the sea, seen from low coastal fynbos dunes at the southern tip "
+        "of Africa. A dark curtain of rain hangs offshore, shafts of silver "
+        "light break through heavy cloud onto the water, wind-flattened fynbos "
+        "in the foreground. No people, no buildings, no text, no logos. Muted "
+        "natural colours, documentary photography, 3:2 landscape aspect ratio."
     ),
     # --- Whale post (land-based-whale-watching-cape-agulhas) ----------------
     # Cover: low horizon, subject off-centre — dark hero gradient sits on top.

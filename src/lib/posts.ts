@@ -43,9 +43,11 @@ export const posts: Post[] = [
     slug: "land-based-whale-watching-cape-agulhas",
     title:
       "Whales from the dunes: land-based whale watching at Cape Agulhas",
-    // Primary keyword: "land based whale watching Cape Agulhas". NOT "Cape
-    // Agulhas in July" (domestic-only, and "July is peak" failed fact-check —
-    // season Jun–Nov, peak Aug–Oct). The site's one evergreen whale hub.
+    // Primary keyword: "land based whale watching Cape Agulhas". Deliberately
+    // NOT "Cape Agulhas in July" — a month-almanac term is domestic-only, and
+    // "July is peak whale season" failed fact-checking (season Jun–Nov, peak
+    // Aug–Oct). This post is the site's ONE evergreen whale hub; seasonal
+    // posts (August almanac etc.) must link here, not compete with it.
     seoTitle: "Land-Based Whale Watching at Cape Agulhas",
     seoDescription:
       "Southern rights pass June to November, peaking August–October. Where to watch from shore: Struisbaai, the lighthouse beaches and our own dunes.",
@@ -55,28 +57,6 @@ export const posts: Post[] = [
     readingMinutes: 8,
     tag: "Guide",
     cover: img.whaleCoastCover,
-    // Staged: the page builds and resolves at its URL, but only the wine post
-    // is listed on /blog + the sitemap. Delete this line to publish it live.
-    draft: true,
-  },
-  {
-    slug: "wine-tasting-near-cape-agulhas",
-    title:
-      "The Agulhas Wine Triangle: a cool-climate wine day from the bottom of Africa",
-    // Primary keyword: "wine tasting near Cape Agulhas". We deliberately do NOT
-    // chase "Cape Agulhas wine route" — that SERP is held by the Agulhas Wine
-    // Triangle's own site plus Decanter/WOSA, and the term promises all 15
-    // member cellars across 5 sub-regions when this post covers the Elim day.
-    // ≤46 chars: layout.tsx appends " · Gans-te-Ver" (14) to reach the ~60 cap.
-    seoTitle: "Wine Tasting near Cape Agulhas: an Elim Day",
-    seoDescription:
-      "Africa's coldest wine ward is 45 minutes inland. The Elim cellars we send guests to, how to plan the day, and why you should confirm hours first.",
-    excerpt:
-      "Forty-five minutes inland from our gravel road is the coldest, southernmost wine ward in Africa — Sauvignon Blanc grown in sea wind and shale. Here's the wine day we send guests on, anchored at Black Oystercatcher.",
-    datePublished: "2026-06-15",
-    readingMinutes: 8,
-    tag: "Guide",
-    cover: img.elimVineyardCover,
   },
 ];
 
