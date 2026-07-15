@@ -186,6 +186,38 @@ export const img = {
     height: 1024,
   },
 
+  // ---- Top-floor sunroom (2026: the sea balcony is now glassed in) ----------
+  // In 2026 the main-suite level's sea-facing balcony was enclosed with
+  // frameless sliding glass — an all-weather sunroom that keeps the view and
+  // the light but shrugs off the Cape southeaster. These four are the owner's
+  // own 2026 photos and supersede the older open-balcony shots above
+  // (mainSuiteSeaView / mainSuiteBalcony / mainSuiteSeating / balconyBraaiSea),
+  // which predate the glazing — prefer these when showing the top floor.
+  sunroomSeaTable: {
+    src: cldImage("sunroom-sea-table"),
+    alt: "The top-floor sunroom at Gans-te-Ver — the sea-facing balcony now enclosed with frameless sliding glass windows, a bistro table and bar stools set to the view over the fynbos reserve to the Suiderstrand sea.",
+    width: 1280,
+    height: 960,
+  },
+  sunroomBraai: {
+    src: cldImage("sunroom-braai"),
+    alt: "The glassed-in braai corner on Gans-te-Ver's top floor — a built-in braai against a warm timber-slat wall and a marble-topped console, with sliding glass windows opening the whole wall to the sea.",
+    width: 1280,
+    height: 960,
+  },
+  mainSuiteSunroom: {
+    src: cldImage("main-suite-sunroom"),
+    alt: "The main suite at Gans-te-Ver — bed, rattan sitting corner, TV and mirror opening onto the new glassed-in sunroom, where a bistro table sits behind sliding windows above the sea.",
+    width: 1280,
+    height: 960,
+  },
+  sunroomSunset: {
+    src: cldImage("sunroom-sunset"),
+    alt: "Sunset from the top-floor sunroom at Gans-te-Ver — the sky burning orange over the mountains and bay, seen through the frameless sliding glass that now encloses the sea-facing balcony.",
+    width: 1280,
+    height: 960,
+  },
+
   // ---- Open Graph / share image -------------------------------------------
   ogDefault: {
     src: cldImage("lounge-sea-view", "f_auto,q_auto,c_fill,g_auto,ar_1200:630,w_1200"),

@@ -70,16 +70,17 @@ export function Story() {
         <figure className="lg:sticky lg:top-24 lg:self-start">
           <div className="overflow-hidden rounded-3xl">
             <Image
-              src={img.balconyBraaiSea.src}
-              alt={img.balconyBraaiSea.alt}
-              width={img.balconyBraaiSea.width}
-              height={img.balconyBraaiSea.height}
+              src={img.sunroomBraai.src}
+              alt={img.sunroomBraai.alt}
+              width={img.sunroomBraai.width}
+              height={img.sunroomBraai.height}
               sizes="(min-width: 1024px) 44vw, 100vw"
               className="h-full w-full object-cover"
             />
           </div>
           <figcaption className="mt-3 text-xs uppercase tracking-[0.18em] text-muted">
-            The balcony braai — thirty years of family suppers up here
+            The top-floor braai — glassed in now against the wind, thirty years
+            of family suppers all the same
           </figcaption>
         </figure>
       </div>
