@@ -58,6 +58,25 @@ export const posts: Post[] = [
     tag: "Guide",
     cover: img.whaleCoastCover,
   },
+  {
+    slug: "wine-tasting-near-cape-agulhas",
+    title:
+      "The Agulhas Wine Triangle: a cool-climate wine day from the bottom of Africa",
+    // Primary keyword: "wine tasting near Cape Agulhas". We deliberately do NOT
+    // chase "Cape Agulhas wine route" — that SERP is held by the Agulhas Wine
+    // Triangle's own site plus Decanter/WOSA, and the term promises all 15
+    // member cellars across 5 sub-regions when this post covers the Elim day.
+    // ≤46 chars: layout.tsx appends " · Gans-te-Ver" (14) to reach the ~60 cap.
+    seoTitle: "Wine Tasting near Cape Agulhas: an Elim Day",
+    seoDescription:
+      "Africa's coldest wine ward is 45 minutes inland. The Elim cellars we send guests to, how to plan the day, and why you should confirm hours first.",
+    excerpt:
+      "Forty-five minutes inland from our gravel road is the coldest, southernmost wine ward in Africa — Sauvignon Blanc grown in sea wind and shale. Here's the wine day we send guests on, anchored at Black Oystercatcher.",
+    datePublished: "2026-06-15",
+    readingMinutes: 8,
+    tag: "Guide",
+    cover: img.elimVineyardCover,
+  },
 ];
 
 export function getPost(slug: string): Post | undefined {
