@@ -104,5 +104,14 @@ export function getPost(slug: string): Post | undefined {
   return posts.find((p) => p.slug === slug);
 }
 
-/** Posts that appear on /blog and in the sitemap — drafts excluded. */
-export const publishedPosts: Post[] = posts.filter((p) => !p.draft);
+/**
+ * Posts that appear on /blog and in the sitemap — drafts excluded, newest
+ * first. Sorted rather than relying on the order of the `posts` array: that
+ * order is authoring convenience, and a new post appended to the end was
+ * landing at the bottom of the index where nobody scrolls. ISO dates compare
+ * correctly as strings, and `.filter()` already returned a fresh array, so
+ * `posts` itself is not mutated.
+ */
+export const publishedPosts: Post[] = posts
+  .filter((p) => !p.draft)
+  .sort((a, b) => b.datePublished.localeCompare(a.datePublished));
