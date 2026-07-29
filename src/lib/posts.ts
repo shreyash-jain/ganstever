@@ -98,6 +98,33 @@ export const posts: Post[] = [
     tag: "Guide",
     cover: img.roadTripCover,
   },
+  // ---------------------------------------------------------------------
+  // Restored. Both of these shipped in the launch build (031813c) and were
+  // then deleted by 30abda3, a "single-post preview" commit that stripped
+  // the other journal posts so the wine post could be previewed alone. That
+  // deletion reached main and was never reverted, so both 404'd in
+  // production. Recovered from origin/journal/agulhas-wine-triangle.
+  // ---------------------------------------------------------------------
+  {
+    slug: "things-to-do-cape-agulhas",
+    title: "Things to do around Suiderstrand & Cape Agulhas",
+    excerpt:
+      "The southernmost tip of Africa, the lighthouse, a shipwreck you can walk to, whales off the dunes — a local family's guide to the very bottom of the continent.",
+    datePublished: "2026-06-12",
+    readingMinutes: 9,
+    tag: "Guide",
+    cover: img.gardenBeachCurve,
+  },
+  {
+    slug: "thirty-years-of-summers",
+    title: "Thirty years of summers: why we finally opened Gans-te-Ver",
+    excerpt:
+      "A stand bought in 1990, a house built the year after, and three decades of family summers at the end of a gravel road — the story of why we finally opened the doors in 2024.",
+    datePublished: "2026-06-12",
+    readingMinutes: 6,
+    tag: "Our Story",
+    cover: img.balconyBraaiSea,
+  },
 ];
 
 export function getPost(slug: string): Post | undefined {
