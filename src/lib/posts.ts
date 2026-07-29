@@ -90,15 +90,13 @@ export const posts: Post[] = [
       "The route, the stops and the 2026 long weekends worth booking — 230 km and about three hours from the city to a beach house that sleeps ten.",
     excerpt:
       "Everyone has the same conversation somewhere around Caledon: we could have been in Hermanus by now. You could have — but the extra ninety minutes is the whole point. The drive, the stops, and the 2026 dates worth booking.",
-    datePublished: "2026-08-20",
+    // Published on the day it went live rather than the brief's 20 August
+    // target: a card and an Article datePublished dated three weeks ahead of
+    // the deploy reads as a bug to a reader and is a bad signal to Google.
+    datePublished: "2026-07-29",
     readingMinutes: 7,
     tag: "Guide",
     cover: img.roadTripCover,
-    // SCHEDULED, not unfinished. The post is fact-checked and builds clean;
-    // this flag only holds it back until its 20 August 2026 publish date, so
-    // the /blog card and sitemap don't carry a future dateline. Delete this
-    // line on the day to publish — nothing else to change.
-    draft: true,
   },
 ];
 
