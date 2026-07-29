@@ -77,6 +77,29 @@ export const posts: Post[] = [
     tag: "Guide",
     cover: img.elimVineyardCover,
   },
+  {
+    slug: "cape-town-to-cape-agulhas-road-trip",
+    title: "Cape Town to Cape Agulhas: the long-weekend drive",
+    // Primary keyword: "Cape Town to Cape Agulhas road trip". Deliberately
+    // NOT "Cape Town to Cape Agulhas drive" — the calendar assigns that head
+    // term to the planned /blog/cape-town-to-cape-agulhas-scenic-drive post.
+    // This one owns the long-weekend / trip-planning intent: the 2026 dates,
+    // the stops, the shop, the house at the end of it.
+    seoTitle: "Cape Town to Cape Agulhas Road Trip",
+    seoDescription:
+      "The route, the stops and the 2026 long weekends worth booking — 230 km and about three hours from the city to a beach house that sleeps ten.",
+    excerpt:
+      "Everyone has the same conversation somewhere around Caledon: we could have been in Hermanus by now. You could have — but the extra ninety minutes is the whole point. The drive, the stops, and the 2026 dates worth booking.",
+    datePublished: "2026-08-20",
+    readingMinutes: 7,
+    tag: "Guide",
+    cover: img.roadTripCover,
+    // SCHEDULED, not unfinished. The post is fact-checked and builds clean;
+    // this flag only holds it back until its 20 August 2026 publish date, so
+    // the /blog card and sitemap don't carry a future dateline. Delete this
+    // line on the day to publish — nothing else to change.
+    draft: true,
+  },
 ];
 
 export function getPost(slug: string): Post | undefined {

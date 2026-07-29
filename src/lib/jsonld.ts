@@ -90,6 +90,31 @@ export function faqLd(faqs: { q: string; a: string }[]) {
   };
 }
 
+/**
+ * Ordered ItemList — for posts whose spine is a sequence a reader follows
+ * (route stops, an itinerary). Position is the array order.
+ */
+export function itemListLd(opts: {
+  name: string;
+  path: string;
+  items: { name: string; description: string }[];
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: opts.name,
+    itemListOrder: "https://schema.org/ItemListOrderAscending",
+    numberOfItems: opts.items.length,
+    url: `${site.url}${opts.path}`,
+    itemListElement: opts.items.map((it, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: it.name,
+      description: it.description,
+    })),
+  };
+}
+
 export function articleLd(opts: {
   headline: string;
   description: string;
