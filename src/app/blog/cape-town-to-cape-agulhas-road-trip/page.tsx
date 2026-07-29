@@ -39,7 +39,7 @@ const stops = [
   {
     name: "Bredasdorp",
     description:
-      "Your last real town: supermarket, bottle store, pharmacy, fuel. Do your shopping here. The Shipwreck Museum is a good primer before you go and stand at the tip.",
+      "The biggest town on the route: supermarket, bottle store, pharmacy, fuel. Do your shopping here. The Shipwreck Museum is a good primer before you go and stand at the tip.",
   },
   {
     name: "The last twenty minutes",
@@ -157,9 +157,9 @@ export default function Page() {
         <TLDR
           label="The short version"
           items={[
-            `${site.distances.capeTownKm} km, about three hours: N2 to Caledon, R316 through Napier to Bredasdorp, R319 south, then a few kilometres of gravel.`,
+            `${site.distances.capeTownKm} km, about three hours: N2 to Caledon, R316 through Napier to Bredasdorp, R319 south, then the last stretch — now paved except for about two kilometres.`,
             "The 2026 long weekends worth booking: Women's Day (8–10 August) and Heritage Day (Thursday 24 September).",
-            "Bredasdorp is your last full supermarket and bottle store. Shop there, not hopefully.",
+            "Bredasdorp is the biggest supermarket and bottle store on the route. Shop there — though Struisbaai now has a big OK and a Pick n Pay, both with liquor stores, and two filling stations.",
             "An ordinary car is fine on the gravel. Drive it slowly, and watch for tortoises.",
             "Sleeps 10, five en-suite bedrooms. Dogs are welcome at the house — but read the pet section, because the national park around us does not allow them.",
           ]}
@@ -174,8 +174,8 @@ export default function Page() {
             },
             {
               value: `${site.distances.bredasdorpKm} km`,
-              label: "to the last big shop",
-              body: "Bredasdorp has the nearest full-size supermarket and bottle store — roughly forty minutes from the house.",
+              label: "to the biggest shop",
+              body: "Bredasdorp has the largest supermarket and bottle store on the route. Closer in, Struisbaai has an OK, a Pick n Pay and two filling stations.",
             },
             {
               value: `Sleeps ${site.capacity.sleeps}`,
@@ -231,12 +231,13 @@ export default function Page() {
             R319 south to L&rsquo;Agulhas and west to Suiderstrand.
           </p>
           <p>
-            The last stretch is a few kilometres of maintained gravel inside the
-            national park, and an ordinary car handles it fine. Take it slowly
-            &mdash; for your suspension, and because there is a fair chance of a
-            tortoise in the road. Fuel in Caledon or Bredasdorp; do not leave
-            Bredasdorp on a quarter tank assuming there is something further
-            south. Turn-by-turn detail lives in the{" "}
+            The last stretch runs into the national park, and most of it has
+            been paved &mdash; by 2026 only about two kilometres of gravel are
+            left, and an ordinary car handles it fine. Take it slowly &mdash;
+            for your suspension, and because there is a fair chance of a
+            tortoise in the road. Fuel in Caledon or Bredasdorp if it suits you;
+            Struisbaai also has two filling stations, fifteen minutes from the
+            house. Turn-by-turn detail lives in the{" "}
             <Link
               href="/#practical"
               className="font-medium text-sea underline-offset-4 hover:underline"
@@ -287,13 +288,14 @@ export default function Page() {
       <div className="mx-auto max-w-3xl px-5 lg:px-8">
         <div className="prose-gv">
           <h2 className="font-display text-2xl text-sea-deep md:text-3xl">
-            What to pack when the nearest big shop is Bredasdorp
+            What to buy in Bredasdorp, and what to bring from home
           </h2>
           <p>
             Buy in Bredasdorp: all your meat for the braai and more than you
-            think, produce and bread for the first two days, and wine and beer
-            &mdash; there is a bottle store there and not one closer.
-            L&rsquo;Agulhas and Struisbaai cover top-ups. From home, bring
+            think, produce and bread for the first two days, and wine and beer.
+            Struisbaai, fifteen minutes from the house, has a big OK and a Pick
+            n Pay, both with liquor stores, so a forgotten crate is a short
+            drive rather than a ruined evening. From home, bring
             coffee you actually like, a proper windbreaker in every season, and
             something to do when the weather closes in. It will, and that is
             half the point. Start the pizza oven earlier than you think.
@@ -363,7 +365,9 @@ export default function Page() {
             arrive with enough light to walk down to the water. Braai. Plan
             nothing else. <strong>Saturday:</strong> walk east to the Meisho
             Maru wreck, then the lighthouse and the boardwalks to the
-            southernmost marker. <strong>Sunday:</strong> the whale day, or
+            southernmost marker &mdash; the lighthouse opened a restaurant in
+            2026, on the road out towards us, which makes lunch easy.{" "}
+            <strong>Sunday:</strong> the whale day, or
             forty-five minutes inland to the{" "}
             <Link
               href="/blog/wine-tasting-near-cape-agulhas"
