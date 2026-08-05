@@ -1,16 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Inter } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
-import { WhatsAppFab } from "@/components/WhatsAppFab";
 import { site } from "@/lib/site";
-import { organizationLd, websiteLd } from "@/lib/jsonld";
-
-// Create the GA4 property for ganstever.com and paste its ID here before
-// launch — analytics stays off while this is empty.
-const GA_MEASUREMENT_ID = "";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -87,35 +78,13 @@ export default function RootLayout({
       lang="en-ZA"
       className={`${inter.variable} ${fraunces.variable} h-full antialiased`}
     >
+      {/* Deliberately bare: no header, footer, analytics tag or JSON-LD here.
+          Anything rendered in the ROOT layout appears on every route, and a
+          nested layout cannot remove it — so /admin would be stuck with the
+          site chrome. All of that lives in (site)/layout.tsx instead, which
+          wraps the public pages only. See src/app/(site)/layout.tsx. */}
       <body className="min-h-full flex flex-col bg-shell text-ink">
-        {GA_MEASUREMENT_ID && (
-          <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-              strategy="afterInteractive"
-            />
-            <Script id="gtag-init" strategy="afterInteractive">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${GA_MEASUREMENT_ID}');
-              `}
-            </Script>
-          </>
-        )}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationLd()) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteLd()) }}
-        />
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <WhatsAppFab />
+        {children}
       </body>
     </html>
   );

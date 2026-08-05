@@ -103,6 +103,30 @@ export const site = {
   ],
 } as const;
 
+// ---------------------------------------------------------------------------
+// Google Analytics 4 — the MEASUREMENT id (G-XXXXXXXXXX).
+//
+// This is the WRITE side: the browser tag that records visits. It is public by
+// design — it ships in the HTML of every page — so it belongs in source, not
+// in a secret. It is NOT the property ID the /admin dashboard reads with; that
+// one is ~9 digits and lives in GOOGLE_ANALYTICS_PROPERTY_ID, server-side.
+//
+// Committed here rather than left to an env var alone because the site is a
+// static export: NEXT_PUBLIC_* values are inlined at BUILD time, and Cloudflare
+// keeps Production and Preview environment variables as separate lists. An ID
+// set only in one list silently never ships in the other build, and the site
+// collects nothing at all — with no error anywhere to notice.
+//
+// From the "ganstever" stream for https://ganstever.com/
+// (GA4 -> Admin -> Data streams). The property ID and the Stream ID both live
+// elsewhere: the property ID is configuration, set as an environment variable,
+// and the Stream ID is not used by anything here.
+const GA_MEASUREMENT_ID_DEFAULT = "G-YTFL0CYK5S";
+
+/** Env override for one-off builds; the committed value is the source of truth. */
+export const gaMeasurementId: string =
+  process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim() || GA_MEASUREMENT_ID_DEFAULT;
+
 // Primary nav — the home page is a single flow, so most items are anchors.
 // Hrefs start with "/" so they also work from /blog pages.
 export const nav = [

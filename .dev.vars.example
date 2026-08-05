@@ -1,0 +1,32 @@
+# Local secrets for `wrangler pages dev` (npm run preview).
+#
+# Copy to `.dev.vars` and fill in. `.dev.vars` is gitignored — the repo's
+# existing `.env*` rule does NOT cover it, so that entry was added explicitly.
+#
+# Verify with:  npm run check:ga
+#
+# ---------------------------------------------------------------------------
+# IMPORTANT: quoting differs by destination.
+#   - HERE (.dev.vars): wrap the private key in DOUBLE QUOTES, keep the \n
+#     sequences literal exactly as they appear in the service-account JSON.
+#   - Cloudflare dashboard: paste the same value RAW, with NO quotes.
+# ---------------------------------------------------------------------------
+
+# ~9 digits. GA4 -> Admin -> Property details (top right).
+# NOT the Stream ID (also ~9 digits, on the Data streams page) and NOT the
+# G-XXXXXXXXXX measurement ID.
+GOOGLE_ANALYTICS_PROPERTY_ID=
+
+# The ACTUAL client_email from the downloaded JSON — never a guessed one.
+# <name>@<project-id>.iam.gserviceaccount.com
+GOOGLE_ANALYTICS_CLIENT_EMAIL=
+
+# The whole private_key value from the JSON, including the BEGIN/END lines.
+GOOGLE_ANALYTICS_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nMIIE...\n-----END PRIVATE KEY-----\n"
+
+# Set these TOGETHER with the GOOGLE_* vars. If the Google vars are set and
+# these are not, real analytics become publicly fetchable at /api/analytics.
+# If BOTH of these are unset the endpoint runs open, which is fine locally and
+# is reported in the payload as authOpen: true.
+ADMIN_USERNAME=
+ADMIN_PASSWORD=
