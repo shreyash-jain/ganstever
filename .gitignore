@@ -33,6 +33,16 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
+# Cloudflare local secrets — `wrangler pages dev` reads this, and the `.env*`
+# rule above does NOT match it. Holds the GA4 service-account private key and
+# the admin password; never commit.
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+
+# Wrangler build/state
+.wrangler/
+
 # vercel
 .vercel
 
