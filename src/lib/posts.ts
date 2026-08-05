@@ -77,11 +77,68 @@ export const posts: Post[] = [
     tag: "Guide",
     cover: img.elimVineyardCover,
   },
+  {
+    slug: "cape-town-to-cape-agulhas-road-trip",
+    title: "Cape Town to Cape Agulhas: the long-weekend drive",
+    // Primary keyword: "Cape Town to Cape Agulhas road trip". Deliberately
+    // NOT "Cape Town to Cape Agulhas drive" — the calendar assigns that head
+    // term to the planned /blog/cape-town-to-cape-agulhas-scenic-drive post.
+    // This one owns the long-weekend / trip-planning intent: the 2026 dates,
+    // the stops, the shop, the house at the end of it.
+    seoTitle: "Cape Town to Cape Agulhas Road Trip",
+    seoDescription:
+      "The route, the stops and the 2026 long weekends worth booking — 230 km and about three hours from the city to a beach house that sleeps ten.",
+    excerpt:
+      "Everyone has the same conversation somewhere around Caledon: we could have been in Hermanus by now. You could have — but the extra ninety minutes is the whole point. The drive, the stops, and the 2026 dates worth booking.",
+    // Published on the day it went live rather than the brief's 20 August
+    // target: a card and an Article datePublished dated three weeks ahead of
+    // the deploy reads as a bug to a reader and is a bad signal to Google.
+    datePublished: "2026-07-29",
+    readingMinutes: 7,
+    tag: "Guide",
+    cover: img.roadTripCover,
+  },
+  // ---------------------------------------------------------------------
+  // Restored. Both of these shipped in the launch build (031813c) and were
+  // then deleted by 30abda3, a "single-post preview" commit that stripped
+  // the other journal posts so the wine post could be previewed alone. That
+  // deletion reached main and was never reverted, so both 404'd in
+  // production. Recovered from origin/journal/agulhas-wine-triangle.
+  // ---------------------------------------------------------------------
+  {
+    slug: "things-to-do-cape-agulhas",
+    title: "Things to do around Suiderstrand & Cape Agulhas",
+    excerpt:
+      "The southernmost tip of Africa, the lighthouse, a shipwreck you can walk to, whales off the dunes — a local family's guide to the very bottom of the continent.",
+    datePublished: "2026-06-12",
+    readingMinutes: 9,
+    tag: "Guide",
+    cover: img.gardenBeachCurve,
+  },
+  {
+    slug: "thirty-years-of-summers",
+    title: "Thirty years of summers: why we finally opened Gans-te-Ver",
+    excerpt:
+      "A stand bought in 1990, a house built the year after, and three decades of family summers at the end of a gravel road — the story of why we finally opened the doors in 2024.",
+    datePublished: "2026-06-12",
+    readingMinutes: 6,
+    tag: "Our Story",
+    cover: img.balconyBraaiSea,
+  },
 ];
 
 export function getPost(slug: string): Post | undefined {
   return posts.find((p) => p.slug === slug);
 }
 
-/** Posts that appear on /blog and in the sitemap — drafts excluded. */
-export const publishedPosts: Post[] = posts.filter((p) => !p.draft);
+/**
+ * Posts that appear on /blog and in the sitemap — drafts excluded, newest
+ * first. Sorted rather than relying on the order of the `posts` array: that
+ * order is authoring convenience, and a new post appended to the end was
+ * landing at the bottom of the index where nobody scrolls. ISO dates compare
+ * correctly as strings, and `.filter()` already returned a fresh array, so
+ * `posts` itself is not mutated.
+ */
+export const publishedPosts: Post[] = posts
+  .filter((p) => !p.draft)
+  .sort((a, b) => b.datePublished.localeCompare(a.datePublished));
