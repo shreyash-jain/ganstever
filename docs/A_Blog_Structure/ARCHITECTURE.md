@@ -157,6 +157,27 @@ for (const { file, prompt } of jobs) {
 **Verified working 2026-08-21** against `qwen/qwen-image-3` via `/api/v1/images`: ~74 s
 per image, ~2.5 MB PNG at 1822×1024, correctly honouring "no people, no text, no logos".
 
+**The bytes are PNG even when you name the file `.jpg`.** `qwen/qwen-image-3` returns
+PNG in `b64_json`; writing it to `<slug>-<slot>.jpg` gives you a PNG with a JPEG
+extension (`head -c 4` shows `8950 4e47`, not `ffd8`). Next serves it anyway, but it is
+inconsistent with the other slots and inflates the file ~7x. Convert before committing.
+`sharp` is installed in `node_modules` but **broken** here (`Cannot find module
+'@img/colour'`); use PowerShell `System.Drawing` instead — it works and needs no install:
+
+```powershell
+Add-Type -AssemblyName System.Drawing
+$img = [System.Drawing.Image]::FromFile($p)
+$bmp = New-Object System.Drawing.Bitmap $img.Width, $img.Height
+[System.Drawing.Graphics]::FromImage($bmp).DrawImage($img, 0, 0, $img.Width, $img.Height)
+# then Save with the image/jpeg encoder at quality 92
+```
+
+**A negative prompt does not hold on a surface the model wants to letter.** "No text" on
+a cardboard carton produced a large, perfectly legible "APPAREL SAMPLES - MADE IN
+PORTUGAL" on a garment slot — factually wrong for that post as well as banned.
+**Remove the surface from the frame rather than asking for it to stay blank.**
+
+
 
 Then `python scripts/upload-to-cloudinary.py` pushes them to the `ganstever/` folder, and
 you add the key to `src/lib/images.ts`. The filename *is* the Cloudinary public_id.
