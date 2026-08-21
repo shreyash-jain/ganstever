@@ -47,7 +47,11 @@ yarn-error.log*
 .vercel
 
 # Claude Code — local agent config, single-maintainer repo
-/.claude/
+/.claude/*
+# ...but the shared blog workflow command travels with the repo.
+!/.claude/commands/
+/.claude/commands/*
+!/.claude/commands/blog.md
 
 # typescript
 *.tsbuildinfo
