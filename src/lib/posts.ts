@@ -40,6 +40,27 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "cape-agulhas-shipwrecks",
+    title:
+      "The shipwreck coast: why so many ships have died at Cape Agulhas",
+    // Primary keyword: "Cape Agulhas shipwrecks". Deliberately NOT the
+    // calendar's assumed "graveyard of ships Cape Agulhas" — that phrase is a
+    // nickname people read, not one they search, and the SERP for it is thin
+    // tourism-board copy. "Cape Agulhas shipwrecks" is the term with real
+    // intent behind it and no other post here competes for it: the wreck is a
+    // single bullet in things-to-do-cape-agulhas, not its subject.
+    // ≤46 chars: layout.tsx appends " · Gans-te-Ver" (14) to reach the ~60 cap.
+    seoTitle: "Cape Agulhas Shipwrecks: Graveyard of Ships",
+    seoDescription:
+      "Around 150 ships have been lost off Cape Agulhas since 1673. The currents that sink them, the Meisho Maru you can walk to, and where to see the rest.",
+    excerpt:
+      "The warm Agulhas current, the cold Southern Ocean and a shallow bank 250 km wide have been wrecking ships here for three and a half centuries. The story, from the wreck at the end of our beach to the one that gave the world “women and children first”.",
+    datePublished: "2026-09-03",
+    readingMinutes: 4,
+    tag: "Guide",
+    cover: img.shipwreckCoastCover,
+  },
+  {
     slug: "land-based-whale-watching-cape-agulhas",
     title:
       "Whales from the dunes: land-based whale watching at Cape Agulhas",

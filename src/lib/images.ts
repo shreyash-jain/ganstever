@@ -283,6 +283,29 @@ export const img = {
     height: 960,
   },
 
+  // ---- AI-illustrative (shipwreck-coast journal post) ----------------------
+  // Same rules as the sets above: generated for the Cape Agulhas shipwrecks
+  // post and uploaded by upload-to-cloudinary.py. Deliberately anonymous sea
+  // and shoreline — NOT the Meisho Maru, and NOT the Agulhas lighthouse. Both
+  // are real, specific, photographable landmarks, and a generated stand-in for
+  // either would be a fake of a real thing on a page written in the family's
+  // own voice. The two real photographs in that post (gardenBeachCurve,
+  // fynbosSea) are Madelaine's.
+  shipwreckCoastCover: {
+    src: cldImage("shipwreck-coast-cover", "f_auto,q_auto,c_limit,w_2000"),
+    alt: "A corroded steel hull half-buried in wet sand on an empty shore under a heavy grey sky — illustrative of the wrecks along the Cape Agulhas coast.",
+    width: 1640,
+    height: 1024,
+  },
+  // Spare — generated and uploaded, dropped from the post when it was cut to
+  // ~900 words and two images. Kept for reuse, not currently placed.
+  agulhasReefSwell: {
+    src: cldImage("agulhas-reef-swell"),
+    alt: "Heavy swell breaking white over a shallow rock reef beneath a low grey sky — illustrative of the sea conditions over the Agulhas Bank.",
+    width: 1536,
+    height: 1024,
+  },
+
   // ---- Open Graph / share image -------------------------------------------
   ogDefault: {
     src: cldImage("lounge-sea-view", "f_auto,q_auto,c_fill,g_auto,ar_1200:630,w_1200"),
