@@ -4,13 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/check-integrity.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "preview": "npm run build && npm run pages:dev",
     "pages:dev": "wrangler pages dev --port 8790",
-    "check:ga": "node scripts/check-ga-credentials.mjs"
+    "check:ga": "node scripts/check-ga-credentials.mjs",
+    "integrity": "node scripts/check-integrity.mjs"
   },
   "dependencies": {
     "jose": "^6.2.8",
