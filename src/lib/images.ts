@@ -306,6 +306,33 @@ export const img = {
     height: 1024,
   },
 
+  // ---- AI-illustrative (48-hour weekend itinerary post) -------------------
+  // Same rules as the sets above: generated for the Cape Agulhas weekend
+  // itinerary post and uploaded by upload-to-cloudinary.py. Deliberately
+  // generic coast, harbour and fynbos — NOT the Agulhas lighthouse, NOT the
+  // southernmost marker, NOT Struisbaai harbour by name. Those are real,
+  // photographable landmarks and a generated stand-in for one would be a fake
+  // of a real thing on a page written in the family's own voice. The real
+  // photograph in that post (sunroomSeaTable) is Madelaine's.
+  agulhasWeekendCover: {
+    src: cldImage("agulhas-weekend-cover", "f_auto,q_auto,c_limit,w_2000"),
+    alt: "An empty white-sand beach at first light, low sun raking across the sand toward fynbos dunes and a calm pale sea — illustrative of a first morning at the southern tip of Africa.",
+    width: 1640,
+    height: 1024,
+  },
+  harbourSkiBoats: {
+    src: cldImage("struisbaai-harbour-boats"),
+    alt: "Brightly painted wooden fishing boats drawn up on a concrete slipway above clear shallow water — illustrative of the working harbours along the Cape Agulhas coast.",
+    width: 1536,
+    height: 1024,
+  },
+  fynbosPathGoldenHour: {
+    src: cldImage("fynbos-path-golden-hour"),
+    alt: "A narrow sandy footpath winding through low limestone coastal fynbos in warm late light, with a thin strip of sea beyond — illustrative of the walking trails around Suiderstrand.",
+    width: 1536,
+    height: 1024,
+  },
+
   // ---- Open Graph / share image -------------------------------------------
   ogDefault: {
     src: cldImage("lounge-sea-view", "f_auto,q_auto,c_fill,g_auto,ar_1200:630,w_1200"),
