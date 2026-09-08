@@ -40,6 +40,27 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "cape-agulhas-weekend-itinerary",
+    title: "Forty-eight hours at the bottom of Africa",
+    // Primary keyword: "Cape Agulhas weekend itinerary". Deliberately NOT the
+    // brief's "weekend trip from Cape Town" — that SERP is wall-to-wall
+    // thirty-destination listicles (GetYourGuide, Marriott, Inside Guide) and
+    // the intent behind it is "give me a menu", which one house cannot serve.
+    // The itinerary term matches what this post actually is, and its only real
+    // competitor is a News24 piece from 2013. It also stays clear of
+    // cape-town-to-cape-agulhas-road-trip, which owns the drive itself.
+    // ≤46 chars: layout.tsx appends " · Gans-te-Ver" (14) to reach the ~60 cap.
+    seoTitle: "Cape Agulhas Weekend Itinerary: 48 Hours",
+    seoDescription:
+      "Two nights is enough at the southern tip — if you spend them in one place. The hour-by-hour weekend we send guests on, from a Friday 2pm start.",
+    excerpt:
+      "Two nights sounds thin for a three-hour drive. It isn’t — but only if you stop trying to see everything. Here is the 48 hours we actually recommend, from the Friday you leave the city to the Sunday you drag yourself away.",
+    datePublished: "2026-09-08",
+    readingMinutes: 7,
+    tag: "Guide",
+    cover: img.agulhasWeekendCover,
+  },
+  {
     slug: "cape-agulhas-shipwrecks",
     title:
       "The shipwreck coast: why so many ships have died at Cape Agulhas",
