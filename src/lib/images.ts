@@ -333,6 +333,27 @@ export const img = {
     height: 1024,
   },
 
+  // ---- AI-illustrative (two-oceans myth journal post) ----------------------
+  // Same rules as the sets above: generated for the two-oceans myth post and
+  // uploaded by upload-to-cloudinary.py. Deliberately open sea and anonymous
+  // rocky shore only — NOT the southernmost-tip marker, NOT the Map of Africa
+  // monument, NOT the lighthouse. Those are real, photographable landmarks and
+  // a generated stand-in for one would be a fake of a real thing on a page
+  // written in the family's own voice. The real photograph in that post
+  // (fynbosSea) is Madelaine's.
+  twoOceansCover: {
+    src: cldImage("two-oceans-cover", "f_auto,q_auto,c_limit,w_2000"),
+    alt: "Low flat rocks running out into a wide, wind-textured sea under a pale sky, the horizon empty in every direction — illustrative of the open water south of Cape Agulhas.",
+    width: 1640,
+    height: 1024,
+  },
+  twoOceansEddies: {
+    src: cldImage("two-oceans-eddies"),
+    alt: "The sea from high above: two shades of blue-green water curling into each other in broad, soft swirls with no hard edge between them — illustrative of how warm and cold water actually mix south of Africa.",
+    width: 1536,
+    height: 1024,
+  },
+
   // ---- Open Graph / share image -------------------------------------------
   ogDefault: {
     src: cldImage("lounge-sea-view", "f_auto,q_auto,c_fill,g_auto,ar_1200:630,w_1200"),
