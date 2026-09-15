@@ -10,13 +10,13 @@ say *how*; this says *where we are*.
 > - **Before you leave:** update statuses, record blockers, list the next actions, and
 >   commit your branch.
 
-*Last updated: 2026-08-21.*
+*Last updated: 2026-09-15.*
 
 ---
 
 ## Published posts
 
-Five posts live in `src/lib/posts.ts`:
+Seven posts live in `src/lib/posts.ts` on `main`:
 
 | Slug | Tag | Published |
 |---|---|---|
@@ -25,6 +25,8 @@ Five posts live in `src/lib/posts.ts`:
 | `wine-tasting-near-cape-agulhas` | Guide | 2026-06-15 |
 | `land-based-whale-watching-cape-agulhas` | Guide | 2026-07-10 |
 | `cape-town-to-cape-agulhas-road-trip` | Guide | 2026-07-29 |
+| `cape-agulhas-shipwrecks` | Guide | 2026-09-03 |
+| `cape-agulhas-weekend-itinerary` | Guide | 2026-09-08 |
 
 **Invariant:** the number of entries in `posts.ts` must equal the number of post folders
 under `src/app/(site)/blog/` (excluding `page.tsx`). Check after every merge — a merge can
@@ -40,8 +42,9 @@ find "src/app/(site)/blog" -mindepth 1 -maxdepth 1 -type d | wc -l
 
 | Work | Branch | State | Next action |
 |---|---|---|---|
-| Restore three journal posts | `blog/restore-three-journal-posts` | Local branch, in progress | Verify against `origin/main`, build, PR |
-| Blog docs standardisation | *(this folder)* | Uncommitted | Commit `docs/A_Blog_Structure/` + `.claude/commands/blog.md` + the `.gitignore` change that lets the command be tracked |
+| Two-oceans myth post (`two-oceans-meet-cape-agulhas-myth`) | `blog/two-oceans-meet-cape-agulhas-myth` | On `preview` (2026-09-15), PR #14 open | Marketing lead + Madelaine review. Two images are stand-ins (cover = `gardenSeaView`, inline = `agulhasReefSwell`) because OpenRouter had no credit; generate `two-oceans-cover.png` (1640×1024) and `two-oceans-eddies.png` (1536×1024), upload, and switch `posts.ts` + `page.tsx` to `img.twoOceansCover` / `img.twoOceansEddies`. Three first-person claims flagged for Madelaine in the PR. |
+
+*Restore-three-posts and the docs standardisation both shipped (#11, #8).*
 
 ## The plan
 
