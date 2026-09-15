@@ -40,6 +40,27 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "two-oceans-meet-cape-agulhas-myth",
+    title: "Debunking the myth: do two oceans really meet at Cape Agulhas?",
+    // Primary keyword: "where do two oceans meet Cape Agulhas". The slug is
+    // the brief's, kept at the marketing lead's request; it still carries the
+    // core term. No other post targets it — things-to-do-cape-agulhas mentions
+    // the meeting point in one bullet, and the whale post in one aside.
+    // ≤46 chars: layout.tsx appends " · Gans-te-Ver" (14) to reach the ~60 cap.
+    seoTitle: "Do Two Oceans Meet at Cape Agulhas? The Myth",
+    seoDescription:
+      "Officially the Indian and Atlantic oceans meet at Cape Agulhas, not Cape Point — but there is no line in the water. The science, in plain words.",
+    excerpt:
+      "Everyone arrives expecting a line in the sea. There isn’t one — not here, not at Cape Point. What there is: an official boundary at 20° east that runs through our tip, and a slow churn of warm and cold water out past the horizon. The real story, from the people who live on it.",
+    datePublished: "2026-09-15",
+    readingMinutes: 7,
+    tag: "Guide",
+    // TEMPORARY stand-in: OpenRouter had no credit when this post was drafted
+    // (2026-09-15). Switch to img.twoOceansCover once two-oceans-cover.png is
+    // generated and uploaded. gardenSeaView is not used as any other cover.
+    cover: img.gardenSeaView,
+  },
+  {
     slug: "cape-agulhas-weekend-itinerary",
     title: "Forty-eight hours at the bottom of Africa",
     // Primary keyword: "Cape Agulhas weekend itinerary". Deliberately NOT the
