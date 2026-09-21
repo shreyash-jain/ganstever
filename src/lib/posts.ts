@@ -40,6 +40,28 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "workation-cape-agulhas",
+    title: "Can You Actually Work From Here? A Workation Test at Gans-te-Ver",
+    // Primary keyword: "workation Cape Agulhas". Deliberately NOT the brief's
+    // "workation South Africa" — that SERP is held by IOL, Getaway and SA
+    // People listicles and the intent is "give me eleven destinations", which
+    // one house cannot serve. Nobody owns the entity term: the only results
+    // are Airbnb listing pages. "workation South Africa" and "work from
+    // holiday home South Africa" are secondaries in the body. The brief's slug
+    // (/blog/workation-cape-agulha) had a missing "s". Stays clear of the
+    // planned Feb-2027 connectivity post, which owns "wifi and load shedding".
+    // ≤46 chars: layout.tsx appends " · Gans-te-Ver" (14) to reach the ~60 cap.
+    seoTitle: "Workation Cape Agulhas: Can You Work Here?",
+    seoDescription:
+      "A working week at our own beach house at the southern tip: the Wi-Fi, the desk with the sea in it, the wind, and who a workation here actually suits.",
+    excerpt:
+      "Since we opened the house the first question has changed from “how far is the beach?” to “what is the Wi-Fi like?”. So we spent five working days here, laptops open, and wrote down what held and what didn’t.",
+    datePublished: "2026-09-21",
+    readingMinutes: 7,
+    tag: "Guide",
+    cover: img.workationCover,
+  },
+  {
     slug: "two-oceans-meet-cape-agulhas-myth",
     title: "Debunking the myth: do two oceans really meet at Cape Agulhas?",
     // Primary keyword: "where do two oceans meet Cape Agulhas". The slug is
