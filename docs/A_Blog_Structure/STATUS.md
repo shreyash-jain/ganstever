@@ -10,13 +10,13 @@ say *how*; this says *where we are*.
 > - **Before you leave:** update statuses, record blockers, list the next actions, and
 >   commit your branch.
 
-*Last updated: 2026-09-15.*
+*Last updated: 2026-09-21.*
 
 ---
 
 ## Published posts
 
-Seven posts live in `src/lib/posts.ts` on `main`:
+Eight posts live in `src/lib/posts.ts` on `main`:
 
 | Slug | Tag | Published |
 |---|---|---|
@@ -27,6 +27,7 @@ Seven posts live in `src/lib/posts.ts` on `main`:
 | `cape-town-to-cape-agulhas-road-trip` | Guide | 2026-07-29 |
 | `cape-agulhas-shipwrecks` | Guide | 2026-09-03 |
 | `cape-agulhas-weekend-itinerary` | Guide | 2026-09-08 |
+| `two-oceans-meet-cape-agulhas-myth` | Guide | 2026-09-15 |
 
 **Invariant:** the number of entries in `posts.ts` must equal the number of post folders
 under `src/app/(site)/blog/` (excluding `page.tsx`). Check after every merge — a merge can
@@ -42,7 +43,8 @@ find "src/app/(site)/blog" -mindepth 1 -maxdepth 1 -type d | wc -l
 
 | Work | Branch | State | Next action |
 |---|---|---|---|
-| Two-oceans myth post (`two-oceans-meet-cape-agulhas-myth`) | `blog/two-oceans-meet-cape-agulhas-myth` | On `preview` (2026-09-15), PR #14 open | Marketing lead + Madelaine review. Two images are stand-ins (cover = `gardenSeaView`, inline = `agulhasReefSwell`) because OpenRouter had no credit; generate `two-oceans-cover.png` (1640×1024) and `two-oceans-eddies.png` (1536×1024), upload, and switch `posts.ts` + `page.tsx` to `img.twoOceansCover` / `img.twoOceansEddies`. Three first-person claims flagged for Madelaine in the PR. |
+| Workation test post (`workation-cape-agulhas`) | `blog/workation-cape-agulhas` | On `preview` (2026-09-21), PR pending | Marketing lead + Madelaine review. Five items for Madelaine to confirm (see the PR): the family "worked a week here" frame, the Wi-Fi connection type, mobile networks that work at Suiderstrand, any backup power, and longer-stay pricing by message. Title kept exactly as briefed at the marketing lead's request; slug corrected from the brief's `workation-cape-agulha`. |
+| Two-oceans myth post (`two-oceans-meet-cape-agulhas-myth`) | merged (#14, 2026-09-15) | **Live, but two images are still stand-ins** (cover = `gardenSeaView`, inline = `agulhasReefSwell`) | Generate `two-oceans-cover.png` (1640×1024) and `two-oceans-eddies.png` (1536×1024), upload, and switch `posts.ts` + `page.tsx` to `img.twoOceansCover` / `img.twoOceansEddies`. OpenRouter has credit again as of 2026-09-21. |
 
 *Restore-three-posts and the docs standardisation both shipped (#11, #8).*
 
