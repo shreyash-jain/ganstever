@@ -354,6 +354,32 @@ export const img = {
     height: 1024,
   },
 
+  // ---- AI-illustrative (workation journal post) ----------------------------
+  // Same rules as the sets above: generated for the workation post and
+  // uploaded by upload-to-cloudinary.py. Deliberately coast, weather and a
+  // generic railing only — NO interiors, NO desk, NO laptop-on-a-table, because
+  // an AI "workspace" on a page written in the family's own voice would read as
+  // a photograph of the house, and it is not. The desk shot in that post
+  // (sunroomSeaTable) is Madelaine's real 2026 photograph.
+  workationCover: {
+    src: cldImage("workation-cover", "f_auto,q_auto,c_limit,w_2000"),
+    alt: "Early morning on a quiet stretch of southern Cape coast — low dunes with coastal fynbos, a pale calm sea and soft light, the horizon low and empty — illustrative of the seven o'clock walk before a working day at Suiderstrand.",
+    width: 1640,
+    height: 1024,
+  },
+  workationSoutheaster: {
+    src: cldImage("workation-southeaster"),
+    alt: "A southeaster blowing hard over a rocky southern Cape shore — white-capped sea, spray lifting off the rocks and dune grass bent flat under a bright, hazy sky — illustrative of the wind that decides where you work on this coast.",
+    width: 1536,
+    height: 1024,
+  },
+  workationRailingCoffee: {
+    src: cldImage("workation-railing-coffee"),
+    alt: "A ceramic mug of coffee on a weathered wooden railing, with soft-focus coastal fynbos and a calm sea beyond in early light — illustrative of the start of a working day on the coast.",
+    width: 1536,
+    height: 1024,
+  },
+
   // ---- Open Graph / share image -------------------------------------------
   ogDefault: {
     src: cldImage("lounge-sea-view", "f_auto,q_auto,c_fill,g_auto,ar_1200:630,w_1200"),
