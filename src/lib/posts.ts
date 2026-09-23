@@ -40,6 +40,30 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "elopement-cape-agulhas",
+    title:
+      "The Elopement Nobody Sees Coming: Getting Married at the Bottom of Africa",
+    // Primary keyword: "elopement Cape Agulhas". Deliberately NOT the brief's
+    // "elopement venue South Africa" — a head term held by venue directories,
+    // and "venue" is a word the site itself rules out (Good to Know: "Parties
+    // and events, no"). The post is framed as the house being the base for a
+    // ten-person elopement whose ceremony happens at the tip / on the beach
+    // under a SANParks permit, never as a venue. "small wedding Western
+    // Cape", "micro wedding Overberg", "private beach ceremony" and
+    // "family-only wedding" are secondaries in the body. No other post
+    // touches weddings.
+    // ≤46 chars: layout.tsx appends " · Gans-te-Ver" (14) to reach the ~60 cap.
+    seoTitle: "Elopement Cape Agulhas: Marry at Africa's Tip",
+    seoDescription:
+      "An honest guide to eloping at Cape Agulhas: the marriage officer, the SANParks permit at the tip, the wind, and a whole house for the ten who matter.",
+    excerpt:
+      "South African law needs two witnesses. Everyone after that is someone you chose. What a wedding at the southernmost tip of Africa honestly looks like — the paperwork, the permit, the wind — and why our house is the place you come back to, not the venue.",
+    datePublished: "2026-09-28",
+    readingMinutes: 8,
+    tag: "Guide",
+    cover: img.elopementCover,
+  },
+  {
     slug: "workation-cape-agulhas",
     title: "Can You Actually Work From Here? A Workation Test at Gans-te-Ver",
     // Primary keyword: "workation Cape Agulhas". Deliberately NOT the brief's
