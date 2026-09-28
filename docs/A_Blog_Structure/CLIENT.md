@@ -84,6 +84,19 @@ interior over people.
 *Append every new one, newest first, with the date and the reason. Never delete an entry
 — supersede it and say so.*
 
+- **The no-events policy is binding on the writing, not just the bookings** (2026-09-28,
+  elopement post). The home page's Good to Know says: *"Parties and events, no: the house
+  stands inside a quiet nature reserve, and quiet hours run 22:00 to 07:00."* Any post
+  touching weddings, retreats, parties, reunions, workshops or group functions must be
+  framed **house-as-base, never house-as-venue** — the gathering happens out in the
+  landscape (with a SANParks permit where the national park is involved), and the house is
+  where a party of ten comes back to. State the no-events rule inside the post and argue it
+  as the reason to come; do not bury it. **Reason:** a post that reads as a venue listing
+  contradicts the client's own site and generates enquiries Madelaine has to turn away,
+  which is exactly the position the manager exists to keep her out of.
+- **Never put "venue" in a slug or title for this client.** It is both a head term owned by
+  venue directories and the one word the site rules out. Target the entity term instead —
+  `elopement Cape Agulhas`, not `elopement venue South Africa`. (2026-09-28)
 - **Three posts a month, one per segment** (Planning / Logistics / Seasonal), sequenced to
   demand — whale and almanac posts just before each season, December-booking and festive
   posts in October, long-weekend posts before the actual 2027 public holidays.
@@ -95,4 +108,4 @@ interior over people.
 - **Match intent to scope.** A "wine route" keyword promises fifteen cellars; if the post
   covers one ward, target the ward.
 
-*Last reviewed: 2026-08-21.*
+*Last reviewed: 2026-09-28.*
