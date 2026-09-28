@@ -380,6 +380,27 @@ export const img = {
     height: 1024,
   },
 
+  // ---- AI-illustrative (elopement journal post) ----------------------------
+  // Same rules as the sets above: generated for the elopement post and
+  // uploaded by upload-to-cloudinary.py. Landscape and a still-life only —
+  // NO couple, NO ceremony set-up, NO arch or chairs on a beach, because the
+  // post's whole argument is that the house is not a venue, and an AI
+  // "ceremony" would picture exactly the thing the site says it does not host.
+  // The two house images in that post (sunroomSunset, diningPizzaOven) are
+  // Madelaine's real photographs.
+  elopementCover: {
+    src: cldImage("elopement-cover", "f_auto,q_auto,c_limit,w_2000"),
+    alt: "Dusk on the southern Cape coast — a low limestone shore running out to a flat sea, the sky fading from apricot to slate and a distant lighthouse beam small on the horizon — illustrative of the last light at the southernmost tip of Africa.",
+    width: 1640,
+    height: 1024,
+  },
+  elopementFynbosBouquet: {
+    src: cldImage("elopement-fynbos-bouquet"),
+    alt: "A small loose bouquet of fynbos — protea, erica and restio grasses tied with linen ribbon — lying on pale weathered limestone at the sea's edge in soft overcast light — illustrative of the flowers that grow between the house and the water.",
+    width: 1536,
+    height: 1024,
+  },
+
   // ---- Open Graph / share image -------------------------------------------
   ogDefault: {
     src: cldImage("lounge-sea-view", "f_auto,q_auto,c_fill,g_auto,ar_1200:630,w_1200"),
