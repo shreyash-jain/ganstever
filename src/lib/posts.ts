@@ -40,6 +40,30 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "cape-agulhas-whale-watching-season",
+    title:
+      "A whale season at the bottom of Africa: when to come, and what nobody can promise",
+    // Primary keyword: "Cape Agulhas whale watching season". Deliberately NOT
+    // the brief's "Cape Agulhas whale watching" — that is near-enough the same
+    // search as land-based-whale-watching-cape-agulhas, and the two would split
+    // ranking. This post owns the trip-planning intent (which months, the survey
+    // counts, shore or boat, how long to stay); the land-based post stays the
+    // "where to stand" hub and the two link to each other. "Southern right
+    // whales South Africa", "best time to see whales in South Africa", "whale
+    // watching near Agulhas" and "where to see whales in the Western Cape" are
+    // secondaries in the body.
+    // ≤46 chars: layout.tsx appends " · Gans-te-Ver" (14) to reach the ~60 cap.
+    seoTitle: "Cape Agulhas Whale Watching Season: When to Go",
+    seoDescription:
+      "Plan around the Cape Agulhas whale watching season: the best months, what the aerial counts show, shore or boat, and why nobody can promise a whale.",
+    excerpt:
+      "On one survey flight in September 2025, only De Hoop had more whale mothers and calves than Struisbaai. How we would plan a trip around the season, the counts and the days the sea gives you nothing.",
+    datePublished: "2026-11-04",
+    readingMinutes: 9,
+    tag: "Guide",
+    cover: img.whaleSeasonCover,
+  },
+  {
     slug: "elopement-cape-agulhas",
     title:
       "The Elopement Nobody Sees Coming: Getting Married at the Bottom of Africa",

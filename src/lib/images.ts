@@ -401,6 +401,31 @@ export const img = {
     height: 1024,
   },
 
+  // ---- AI-illustrative (whale-season planning journal post) -----------------
+  // Same rules as the sets above: generated for the whale-season post and
+  // uploaded to Cloudinary. Open water, an anonymous bay and dune grass only —
+  // NOT Struisbaai's boardwalk or harbour, NOT the lighthouse, and never a
+  // photograph of a specific sighting. Captions in the post say "illustrative".
+  // The real photograph in that post (sunroomSeaTable) is Madelaine's.
+  whaleSeasonCover: {
+    src: cldImage("whale-season-cover", "f_auto,q_auto,c_limit,w_2000"),
+    alt: "The long dark back of a southern right whale and a soft plume of pale breath, just beyond an empty pale-sand beach under a wide bright overcast sky — illustrative of whale season on the southern Cape coast.",
+    width: 1640,
+    height: 1024,
+  },
+  whaleSeasonMotherCalf: {
+    src: cldImage("whale-season-mother-calf"),
+    alt: "A southern right whale mother and her smaller calf seen from directly above, side by side in shallow pale green water over sand — illustrative of what the aerial survey team sees.",
+    width: 1536,
+    height: 1024,
+  },
+  whaleSeasonTailSlap: {
+    src: cldImage("whale-season-tail-slap"),
+    alt: "The dark tail flukes of a southern right whale lifted above cold grey-blue water, seen from a dune past coastal grasses and low fynbos — illustrative of a whale's tail watched from the shore.",
+    width: 1536,
+    height: 1024,
+  },
+
   // ---- Open Graph / share image -------------------------------------------
   ogDefault: {
     src: cldImage("lounge-sea-view", "f_auto,q_auto,c_fill,g_auto,ar_1200:630,w_1200"),
