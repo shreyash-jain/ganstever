@@ -10,13 +10,13 @@ say *how*; this says *where we are*.
 > - **Before you leave:** update statuses, record blockers, list the next actions, and
 >   commit your branch.
 
-*Last updated: 2026-09-28.*
+*Last updated: 2026-11-06.*
 
 ---
 
 ## Published posts
 
-Nine posts live in `src/lib/posts.ts` on `main`:
+Ten posts live in `src/lib/posts.ts` on `main`:
 
 | Slug | Tag | Published |
 |---|---|---|
@@ -29,6 +29,7 @@ Nine posts live in `src/lib/posts.ts` on `main`:
 | `cape-agulhas-weekend-itinerary` | Guide | 2026-09-08 |
 | `two-oceans-meet-cape-agulhas-myth` | Guide | 2026-09-15 |
 | `workation-cape-agulhas` | Guide | 2026-09-21 |
+| `elopement-cape-agulhas` | Guide | 2026-09-28 |
 
 **Invariant:** the number of entries in `posts.ts` must equal the number of post folders
 under `src/app/(site)/blog/` (excluding `page.tsx`). Check after every merge — a merge can
@@ -44,8 +45,9 @@ find "src/app/(site)/blog" -mindepth 1 -maxdepth 1 -type d | wc -l
 
 | Work | Branch | State | Next action |
 |---|---|---|---|
+| Whale season post (`cape-agulhas-whale-watching-season`) | `blog/cape-agulhas-whale-watching-season` | On `preview` (2026-11-05), PR #17 open | Manager + Madelaine review. Manager decides the title and timing. Madelaine confirms the candour about the house's own stretch of coast, any permitted boat from Struisbaai or Arniston, the drive times, and two first-person lines (see PR #17). Change `datePublished` (currently 2026-11-04) to the day it goes live. |
 | Workation test post (`workation-cape-agulhas`) | merged (#15) | Live | Five items still outstanding for Madelaine (see PR #15): the family "worked a week here" frame, the Wi-Fi connection type, mobile networks at Suiderstrand, any backup power, and longer-stay pricing by message. |
-| Elopement post (`elopement-cape-agulhas`) | `blog/elopement-cape-agulhas` | On `preview` (2026-09-23), PR #16 open | Marketing lead + Madelaine review. **Blocking question: does Madelaine welcome a ten-person family-only wedding stay at all?** The site says "Parties and events, no", so the post is framed as house-as-base, never venue — if she says no to small ceremonies outright, the post should not ship. Four more to confirm (see PR #16): beach ceremony below the house, marriage officer signing at the dining table, the 22:00–07:00 quiet hours, and whether to mention a longer-stay rate by message. |
+| Elopement post (`elopement-cape-agulhas`) | merged (#16, 2026-09-28) | Live | Madelaine's answers are not recorded here. **Blocking question: does Madelaine welcome a ten-person family-only wedding stay at all?** The site says "Parties and events, no", so the post is framed as house-as-base, never venue — if she says no to small ceremonies outright, the post should come down. Four more to confirm (see PR #16): beach ceremony below the house, marriage officer signing at the dining table, the 22:00–07:00 quiet hours, and whether to mention a longer-stay rate by message. |
 | Two-oceans myth post (`two-oceans-meet-cape-agulhas-myth`) | merged (#14, 2026-09-15) | **Live, but two images are still stand-ins** (cover = `gardenSeaView`, inline = `agulhasReefSwell`) | Generate `two-oceans-cover.png` (1640×1024) and `two-oceans-eddies.png` (1536×1024), upload, and switch `posts.ts` + `page.tsx` to `img.twoOceansCover` / `img.twoOceansEddies`. OpenRouter has credit again as of 2026-09-21. |
 
 *Restore-three-posts and the docs standardisation both shipped (#11, #8).*

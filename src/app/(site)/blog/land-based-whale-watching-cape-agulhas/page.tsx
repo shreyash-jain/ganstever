@@ -218,7 +218,15 @@ export default function Page() {
             calves move inshore, and from then until October the question most
             mornings is not whether there are whales but how many. November is
             the long goodbye, with stragglers sometimes hanging on toward
-            December.
+            December. If you are still choosing your dates, we go through the
+            months, the survey counts and how long to stay in{" "}
+            <Link
+              href="/blog/cape-agulhas-whale-watching-season"
+              className="font-medium text-sea underline-offset-4 hover:underline"
+            >
+              our guide to the whale watching season
+            </Link>
+            .
           </p>
           <p>
             So if whales are the whole point of your trip, book August to
