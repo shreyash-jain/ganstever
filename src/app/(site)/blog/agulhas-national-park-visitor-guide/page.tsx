@@ -415,8 +415,7 @@ export default function Page() {
             a few metres from the beach, and the tip is about{" "}
             {site.distances.southernmostTipKm} km away, with the lighthouse at{" "}
             {site.distances.lighthouseKm} km. The kitchen is self-catering, there
-            is a pizza oven and an indoor and outdoor braai, and pets are welcome
-            by prior arrangement.
+            is a pizza oven and an indoor and outdoor braai.
           </p>
           <p>
             One thing to know. The house is a base, not a venue: no parties or
