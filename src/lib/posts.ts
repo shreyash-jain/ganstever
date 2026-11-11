@@ -40,6 +40,27 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "agulhas-national-park-visitor-guide",
+    title: "The park at the bottom of Africa: a visitor’s guide to Agulhas National Park",
+    // Primary keyword: "Agulhas National Park". No other post owns it — the
+    // things-to-do, shipwreck, whale, itinerary and two-oceans posts each name
+    // the park in passing. This post owns "what the park actually is and how
+    // to visit it" and links out to each of those for the detail, rather than
+    // repeating them. Secondaries in the body: southernmost tip of Africa,
+    // Cape Agulhas lighthouse, Meisho Maru shipwreck, Suiderstrand
+    // accommodation, where to stay near Agulhas National Park.
+    // seoTitle is 40 chars; layout.tsx appends " · Gans-te-Ver" (14).
+    seoTitle: "Agulhas National Park: A Visitor’s Guide",
+    seoDescription:
+      "Visiting Agulhas National Park at the southernmost tip of Africa: the tip, the 1849 lighthouse, the Meisho Maru wreck, fynbos, birds and where to stay.",
+    excerpt:
+      "Most visitors give Agulhas National Park the length of a photograph at the stone map of Africa. Here is what else is in there, from a family that has holidayed beside it since 1991, and how to spend a day or two.",
+    datePublished: "2026-11-11",
+    readingMinutes: 9,
+    tag: "Guide",
+    cover: img.agulhasParkCover,
+  },
+  {
     slug: "cape-agulhas-whale-watching-season",
     title:
       "A whale season at the bottom of Africa: when to come, and what nobody can promise",
