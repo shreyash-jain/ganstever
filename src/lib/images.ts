@@ -426,6 +426,31 @@ export const img = {
     height: 1024,
   },
 
+  // ---- AI-illustrative (Agulhas National Park visitor-guide post) ----------
+  // Same rules as the sets above: generated for the Agulhas National Park post
+  // and uploaded to Cloudinary. Anonymous limestone shore, fynbos and an inland
+  // salt pan only — NOT the southernmost-tip marker, NOT the lighthouse, NOT the
+  // Meisho Maru, and no named bird or flower species is claimed. The real
+  // photograph in that post (sunroomBraai) is Madelaine's.
+  agulhasParkCover: {
+    src: cldImage("agulhas-park-cover", "f_auto,q_auto,c_limit,w_2000"),
+    alt: "Pale weathered limestone shelves running into a flat blue sea, low coastal fynbos behind and a very low horizon under a deep blue morning sky — illustrative of the Agulhas National Park coastline.",
+    width: 1640,
+    height: 1024,
+  },
+  agulhasParkFynbos: {
+    src: cldImage("agulhas-park-fynbos"),
+    alt: "A pale-pink protea flower head and silvery-green foliage growing from cracked limestone and sandy soil — illustrative of the limestone fynbos of the Agulhas Plain.",
+    width: 1536,
+    height: 1024,
+  },
+  agulhasParkSaltPan: {
+    src: cldImage("agulhas-park-saltpan"),
+    alt: "A still, shallow salt pan with a thin white rim, a few distant wading birds and low fynbos hills beneath a huge pale sky — illustrative of the inland side of the Agulhas Plain.",
+    width: 1536,
+    height: 1024,
+  },
+
   // ---- Open Graph / share image -------------------------------------------
   ogDefault: {
     src: cldImage("lounge-sea-view", "f_auto,q_auto,c_fill,g_auto,ar_1200:630,w_1200"),
