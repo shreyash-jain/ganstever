@@ -451,6 +451,24 @@ export const img = {
     height: 1024,
   },
 
+  // ---- AI-illustrative (weekend-getaway-from-Cape-Town journal post) ---------
+  // Generated for this post and uploaded to Cloudinary. A generic coastal road
+  // and a close-up of beach things only — no named place, no vehicles, no
+  // interiors. Captions in the post say "illustrative". The real photograph in
+  // that post (sunroomSunset) is Madelaine's.
+  weekendGetawayCover: {
+    src: cldImage("weekend-getaway-cover", "f_auto,q_auto,c_limit,w_2000"),
+    alt: "An empty tarred coastal road running straight toward a low flat horizon in late golden light, pale limestone verges and coastal fynbos either side — illustrative of the last stretch of the drive south from Cape Town.",
+    width: 1640,
+    height: 1024,
+  },
+  weekendGetawaySundayMorning: {
+    src: cldImage("weekend-getaway-sunday-morning"),
+    alt: "A pair of worn, sand-dusted canvas sandals beside a folded towel on a weathered timber bench, with soft-focus fynbos and a pale sea behind — illustrative of a slow Sunday morning at the coast.",
+    width: 1536,
+    height: 1024,
+  },
+
   // ---- Open Graph / share image -------------------------------------------
   ogDefault: {
     src: cldImage("lounge-sea-view", "f_auto,q_auto,c_fill,g_auto,ar_1200:630,w_1200"),

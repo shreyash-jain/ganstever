@@ -40,6 +40,28 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "weekend-getaway-from-cape-town",
+    title: "The weekend away that is an hour further than it needs to be",
+    // Primary keyword: "weekend getaway from Cape Town". The brief wanted a
+    // generic "perfect weekend" itinerary; that would have cannibalised
+    // cape-agulhas-weekend-itinerary (48 hours) and cape-town-to-cape-agulhas-
+    // road-trip (the drive), and the calendar's March 2027 long-weekend post
+    // owns "long weekend getaway from Cape Town". This post instead argues the
+    // comparison — Hermanus vs. the end of the road — and links to both live
+    // posts for the detail. "Suiderstrand accommodation" is a secondary.
+    // A head term: treat as a slow build (see CLIENT.md).
+    // ≤46 chars: layout.tsx appends " · Gans-te-Ver" (14) to reach the ~60 cap.
+    seoTitle: "Weekend Getaway from Cape Town: Cape Agulhas",
+    seoDescription:
+      "A weekend getaway from Cape Town that ends at the southern tip: the honest drive, what the extra hour past Hermanus buys, and a house for ten.",
+    excerpt:
+      "Hermanus is about an hour and a half from Cape Town. We are two hours forty-five. The case for the extra hour, the case against it, and who should stop short.",
+    datePublished: "2026-11-13",
+    readingMinutes: 6,
+    tag: "Guide",
+    cover: img.weekendGetawayCover,
+  },
+  {
     slug: "agulhas-national-park-visitor-guide",
     title: "The park at the bottom of Africa: a visitor’s guide to Agulhas National Park",
     // Primary keyword: "Agulhas National Park". No other post owns it — the
