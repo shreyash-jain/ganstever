@@ -469,6 +469,18 @@ export const img = {
     height: 1024,
   },
 
+  // ---- AI-illustrative (family-holiday-Cape-Agulhas journal post) -----------
+  // Generated for this post and uploaded to Cloudinary. A generic set table
+  // on a patio, no named property, no people. Captions in the post say
+  // "illustrative". The real photographs in that post (diningRoom,
+  // kitchenWide) are Madelaine's.
+  familyHolidayCover: {
+    src: cldImage("family-holiday-cover", "f_auto,q_auto,c_limit,w_2000"),
+    alt: "A long wooden outdoor table laid for ten on a stone patio, woven chairs around it, a sunhat and towel draped over one, low fynbos dunes and a pale sea beyond a stone wall — illustrative of a family holiday house built for a big group.",
+    width: 1640,
+    height: 1024,
+  },
+
   // ---- Open Graph / share image -------------------------------------------
   ogDefault: {
     src: cldImage("lounge-sea-view", "f_auto,q_auto,c_fill,g_auto,ar_1200:630,w_1200"),
