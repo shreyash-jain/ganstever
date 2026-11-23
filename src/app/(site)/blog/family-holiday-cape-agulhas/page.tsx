@@ -160,7 +160,8 @@ export default function Page() {
           </h2>
           <p>
             Start with bedrooms and bathrooms, not the photos of the view.
-            Here that means {site.capacity.bedrooms} double bedrooms, each with
+            Here that means {site.capacity.bedrooms}
+            {" "}double bedrooms, each with
             its own en-suite bathroom &mdash; so a bad night&rsquo;s sleep for
             one grandparent doesn&rsquo;t become everyone&rsquo;s problem, and
             a shower before breakfast isn&rsquo;t a queue. Two lounges and a
@@ -264,7 +265,8 @@ export default function Page() {
           <p>
             Plan one outing a day, not five. The southernmost tip of Africa is{" "}
             {site.distances.southernmostTipKm} km away and the lighthouse
-            grounds are {site.distances.lighthouseKm} km &mdash; both short
+            grounds are {site.distances.lighthouseKm}
+            {" "}km &mdash; both short
             enough to do with young children and older relatives in the same
             car. Our{" "}
             <Link
@@ -358,7 +360,8 @@ export default function Page() {
             Fitting three generations under one roof
           </h2>
           <p>
-            The house was built in {site.builtIn} for a family that didn&rsquo;t
+            The house was built in {site.builtIn}
+            {" "}for a family that didn&rsquo;t
             want to be in one room all day, and that turns out to be exactly
             the floor plan a multi-generational holiday needs: two lounges, a
             dining room, and bedrooms with doors that actually close. Give the
