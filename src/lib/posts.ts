@@ -40,6 +40,33 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "family-holiday-cape-agulhas",
+    title: "The holiday that actually fits ten: planning a family trip here",
+    // Primary keyword: "family holiday Cape Agulhas". Deliberately NOT the
+    // brief's "self-catering beach house sleeps 10" — that SERP is wall-to-
+    // wall sa-venues.com, LekkeSlaap, Hotels.com and Expedia listing pages (a
+    // head term owned by aggregators, no blog content in sight), and the
+    // brief's own slug would have read as a generic listing rather than a
+    // guide. "Family holiday Cape Agulhas" and "how to plan a family holiday
+    // self-catering" turned up only generic UK blogs (Booking.com, Mumsnet,
+    // i-escape) with nothing Cape-Agulhas-specific — a genuine long-tail
+    // opening. "Self-catering accommodation sleeps 10", "large family beach
+    // holiday" and "beach house for large families" are secondaries in the
+    // body. Logistics segment (house-vs-hotel budgeting), same slot as
+    // weekend-getaway-from-cape-town this month — flagged for Madelaine/the
+    // manager in case the calendar meant one Logistics post, not two.
+    // ≤46 chars: layout.tsx appends " · Gans-te-Ver" (14) to reach the ~60 cap.
+    seoTitle: "Family Holiday Cape Agulhas: Plan for 10",
+    seoDescription:
+      "Planning a family holiday for ten at Cape Agulhas: budgeting a whole house against hotel rooms, groceries, packing and who actually fits where.",
+    excerpt:
+      "Ten people, one kitchen, no negotiating who eats where. How we'd actually plan a large family holiday around a self-catering house — the budget, the packing list, and the honest case against renting it at all.",
+    datePublished: "2026-11-23",
+    readingMinutes: 9,
+    tag: "Guide",
+    cover: img.familyHolidayCover,
+  },
+  {
     slug: "weekend-getaway-from-cape-town",
     title: "The weekend away that is an hour further than it needs to be",
     // Primary keyword: "weekend getaway from Cape Town". The brief wanted a
