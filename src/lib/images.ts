@@ -481,6 +481,32 @@ export const img = {
     height: 1024,
   },
 
+  // ---- AI-illustrative (cycling-Cape-Agulhas journal post) -----------------
+  // Generated for this post and uploaded to Cloudinary. Deliberately generic
+  // gravel road, fynbos track and an unbranded bicycle only — NOT a named
+  // trail, NOT the lighthouse, NOT the southernmost-tip marker, because the
+  // post's whole argument is that we could not verify a specific marked
+  // trail network here. Captions say "illustrative". The real photograph in
+  // that post (fynbosSea) is Madelaine's.
+  cyclingCoverGravelRoad: {
+    src: cldImage("cycling-cape-agulhas-cover", "f_auto,q_auto,c_limit,w_2000"),
+    alt: "A pale gravel road curving gently through low wind-bent coastal fynbos toward a flat grey-blue sea on the horizon — illustrative of the roads around Suiderstrand suited to a bike.",
+    width: 1640,
+    height: 1024,
+  },
+  cyclingFynbosTrack: {
+    src: cldImage("cycling-cape-agulhas-track"),
+    alt: "A narrow sandy double-track path cutting through dense silver-green coastal fynbos, with a sliver of pale sea visible far in the distance — illustrative of the reserve's own tracks.",
+    width: 1536,
+    height: 1024,
+  },
+  cyclingBicycleFencePost: {
+    src: cldImage("cycling-cape-agulhas-bicycle"),
+    alt: "A weathered grey gravel bicycle leaning against an old wooden fence post on a quiet gravel road, low coastal fynbos and a flat distant sea behind — illustrative of the kind of bike this coast suits.",
+    width: 1536,
+    height: 1024,
+  },
+
   // ---- Open Graph / share image -------------------------------------------
   ogDefault: {
     src: cldImage("lounge-sea-view", "f_auto,q_auto,c_fill,g_auto,ar_1200:630,w_1200"),
