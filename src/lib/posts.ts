@@ -40,6 +40,34 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "cycling-cape-agulhas",
+    title: "Two wheels at the bottom of Africa: cycling around Suiderstrand",
+    // Primary keyword: "cycling Cape Agulhas". Deliberately NOT the brief's
+    // "mountain biking Cape Agulhas" — live research turned up no verifiable,
+    // year-round, public mountain-bike trail network at Suiderstrand (SANParks'
+    // own Agulhas pages don't list cycling as a park activity, and several
+    // crowd-sourced route notes flag cycling as not permitted on stretches of
+    // the coastal path near the lighthouse and the tip). What is verifiable:
+    // flat-to-rolling coast and reserve roads, and an annual community race,
+    // the Cape Agulhas Classic MTB, whose current-year running we could not
+    // confirm. The post is written around the roads we can actually vouch
+    // for, with the "trails" question addressed head-on rather than asserted
+    // as fact — see the ⚠ confirm-before-publishing note handed over with
+    // this post. No other post targets this term; "mountain biking Cape
+    // Agulhas", "Suiderstrand cycling", "Cape Agulhas Classic MTB" and
+    // "outdoor activities Suiderstrand" are secondaries in the body.
+    // ≤46 chars: layout.tsx appends " · Gans-te-Ver" (14) to reach the ~60 cap.
+    seoTitle: "Cycling Cape Agulhas: Suiderstrand by Bike",
+    seoDescription:
+      "Cycling around Suiderstrand and Cape Agulhas: the roads and gravel we'd ride, the annual MTB race, and the honest case against bringing a mountain bike.",
+    excerpt:
+      "Everyone who searches “mountain biking Cape Agulhas” is picturing single-track that we couldn't find. Here's what's actually here — flat coast roads, reserve gravel, one annual race — and why it's still worth bringing a bike.",
+    datePublished: "2026-11-26",
+    readingMinutes: 7,
+    tag: "Guide",
+    cover: img.cyclingCoverGravelRoad,
+  },
+  {
     slug: "family-holiday-cape-agulhas",
     title: "The holiday that actually fits ten: planning a family trip here",
     // Primary keyword: "family holiday Cape Agulhas". Deliberately NOT the
