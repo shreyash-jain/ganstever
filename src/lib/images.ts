@@ -500,6 +500,8 @@ export const img = {
     width: 1536,
     height: 1024,
   },
+  // Spare — generated and uploaded, dropped from the post at the marketing
+  // lead's request. Kept for reuse, not currently placed.
   cyclingBicycleFencePost: {
     src: cldImage("cycling-cape-agulhas-bicycle"),
     alt: "A weathered grey gravel bicycle leaning against an old wooden fence post on a quiet gravel road, low coastal fynbos and a flat distant sea behind — illustrative of the kind of bike this coast suits.",

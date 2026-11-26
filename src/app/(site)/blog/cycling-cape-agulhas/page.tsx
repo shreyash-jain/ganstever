@@ -251,20 +251,6 @@ export default function Page() {
             listing before you build a trip around a specific date.
           </p>
         </div>
-
-        <figure className="my-10 overflow-hidden rounded-3xl">
-          <Image
-            src={img.cyclingBicycleFencePost.src}
-            alt={img.cyclingBicycleFencePost.alt}
-            width={img.cyclingBicycleFencePost.width}
-            height={img.cyclingBicycleFencePost.height}
-            sizes="(min-width: 768px) 720px, 100vw"
-            className="h-auto w-full object-cover"
-          />
-          <figcaption className="mt-3 text-xs uppercase tracking-[0.18em] text-muted">
-            The kind of bike this coast actually suits &mdash; illustrative
-          </figcaption>
-        </figure>
       </div>
 
       <div className="mx-auto max-w-3xl px-5 lg:px-8">
